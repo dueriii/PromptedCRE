@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deeptech-tenant-rep-cli"
+version = "0.1.0"
+description = "CLI-based tenant rep real estate workflow for deeptech and industrial companies"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "OpenAI Starter Repo"}]
+dependencies = []
+
+[project.scripts]
+tenant-rep = "tenant_rep.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

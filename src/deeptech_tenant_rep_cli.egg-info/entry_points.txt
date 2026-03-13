@@ -1,0 +1,2 @@
+[console_scripts]
+tenant-rep = tenant_rep.cli:main
