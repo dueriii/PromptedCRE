@@ -1,63 +1,114 @@
 # PromptedCRE — Industrial Real Estate Workflow Repo
-> Version 1.0 | Updated: 2026-03-15 | Built by William Alcorn, Finial Group
+> Version 2.0 | Updated: 2026-03-15 | Built by William Alcorn, Finial Group
+
+**The most complete industrial real estate decision system available.**
+Built by an active broker. Grounded in live market data. Designed to self-improve.
+
+---
 
 ## What This Is
 
 A structured set of AI workflows for industrial companies making real estate decisions.
-Copy these files into Claude Code, Cursor, or any AI IDE. Run them in order. Move faster, decide smarter.
+Copy these files into Claude, ChatGPT, Cursor, or any AI IDE. Run them in order.
 
-Built by an industrial real estate broker who has originated, underwritten, leased, and advised on dispositions across Houston and San Antonio. This is how deals actually get done — not how textbooks say they do.
+Built from real deal experience — not theory. Covers Houston, San Antonio, and the I-35 corridor. Applicable anywhere.
 
 ---
 
-## How to Use
+## Start Here
 
-**Option A — Full workflow (recommended for new requirements)**
-Run files 01 through 08 in order. Takes 30–60 minutes. Outputs a complete decision memo.
+**First time?** → Read `00-quick-start.md`
 
-**Option B — Spot use**
-Jump to the specific file you need (tour prep, landlord questions, etc.) and run it standalone.
+**Don't know the terminology?** → Read `GLOSSARY.md`
 
-**Before running any workflow:**
-Always paste `MARKET-CONTEXT.md` into your context window first. It contains current market data that makes every workflow sharper.
+**In Texas?** → Read `INCENTIVES.md` before committing to a location (potentially worth $500K+)
+
+**Need a broker?** → Read `BROKER-GUIDE.md` (the honest version)
 
 ---
 
 ## The Workflows
 
-| File | What It Does |
+Run in order for a complete decision. Jump in anywhere for specific needs.
+
+| File | What It Does | When to Use |
+|---|---|---|
+| `00-quick-start.md` | Orient to the system | Always first |
+| `01-intake.md` | Define your requirement | Start of search |
+| `02-search-filters.md` | Build broker-ready search params + budget reality check | Before contacting brokers |
+| `03-property-survey.md` | Evaluate properties against your criteria | For each building you consider |
+| `04-comparison.md` | Lease vs. purchase + building vs. building | Shortlist analysis |
+| `05-tour-prep.md` | What to actually look for on-site | Day before every tour |
+| `06-landlord-questions.md` | 40+ questions that surface problems and leverage | Before your LOI |
+| `07-deal-guidance.md` | Negotiation strategy, LOI structure, deal-killer clauses | Before you make any offer |
+| `08-memo-output.md` | Executive decision memo + LOI cover email | Final approval stage |
+
+---
+
+## Supporting Files
+
+| File | Purpose |
 |---|---|
-| `01-intake.md` | Define your requirement — space, ops, timeline, budget |
-| `02-search-filters.md` | Build market-ready search parameters for broker outreach |
-| `03-property-survey.md` | Evaluate properties systematically against your criteria |
-| `04-comparison.md` | Side-by-side lease vs. purchase, building vs. building |
-| `05-tour-prep.md` | Pre-tour checklists and what to actually look for |
-| `06-landlord-questions.md` | Critical questions for landlords, developers, and seller reps |
-| `07-deal-guidance.md` | Negotiation strategy and deal structure decisions |
-| `08-memo-output.md` | Executive summary and decision memo for stakeholders |
+| `MARKET-CONTEXT.md` | Live Houston + SA industrial market data. Load with every workflow. |
+| `GLOSSARY.md` | Every industrial RE term defined in plain English |
+| `INCENTIVES.md` | Texas tax abatements, grants, exemptions worth pursuing |
+| `BROKER-GUIDE.md` | How to work with (and without) an industrial broker |
+| `CHANGELOG.md` | Every change logged with rationale |
+| `feedback/KNOWN-ISSUES.md` | Where workflow failures get documented and fixed |
+
+---
+
+## How to Use
+
+**The golden rule:** Always paste `MARKET-CONTEXT.md` into your AI context first. Current market data makes every answer 10x sharper.
+
+**Example prompt to get started:**
+```
+[Paste MARKET-CONTEXT.md]
+[Paste 01-intake.md]
+
+I'm looking for industrial space. Please run the intake workflow with me.
+```
 
 ---
 
 ## Self-Improving Design
 
-This repo is built to get better over time:
+This repo is built to get better without manual maintenance:
 
-- **`MARKET-CONTEXT.md`** — refreshed weekly with current market data
-- **`CHANGELOG.md`** — every change logged with rationale
-- **`feedback/KNOWN-ISSUES.md`** — where failures get documented and fixed
+**Weekly market refresh (autoresearch loop):**
+- `autoresearch/market_refresh.ipynb` — Colab notebook that searches the web for fresh market data, updates `MARKET-CONTEXT.md`, and analyzes workflow files for improvement opportunities
+- Run manually every Monday, or automate with GitHub Actions (see notebook for config)
 
-When a workflow doesn't work for your situation, log it in `KNOWN-ISSUES.md`. The next version will address it.
+**Feedback loop:**
+- When a workflow fails → log it in `feedback/KNOWN-ISSUES.md`
+- Every update tracked in `CHANGELOG.md` with version numbers
+- The autoresearch loop flags specific workflow improvements each run
+
+**Versioning:**
+- Each file has a version number in the header
+- Major updates increment the version and log in CHANGELOG
 
 ---
 
 ## Need Human Support?
 
-These workflows get you 80% of the way there. The last 20% — negotiation, relationship management, deal structure — requires a human who knows the market.
+These workflows give you knowledge parity with professionals. The last 20% — negotiation, relationships, deal execution — benefits from an experienced industrial broker.
+
+The listing broker works for the landlord. Your broker costs you nothing (landlord pays the commission).
 
 [Book a call →](https://promptedcre.com)
 
 ---
 
+## Built By
+
+William Alcorn | Senior Associate, Finial Group
+Houston & San Antonio Industrial Real Estate
+[FinialGroup.com](https://finialgroup.com)
+
+---
+
 ## License
 
-MIT. Use it, fork it, share it. Attribution appreciated but not required.
+MIT. Use it, fork it, share it. Attribution appreciated.
