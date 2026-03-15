@@ -1,8 +1,8 @@
 # PromptedCRE — Industrial Real Estate Workflow Repo
-> Version 2.0 | Updated: 2026-03-15 | Built by William Alcorn, Finial Group
+> Version 2.1 | Updated: 2026-03-15 | Built by William Alcorn, Finial Group
 
 **The most complete industrial real estate decision system available.**
-Built by an active broker. Grounded in live market data. Designed to self-improve.
+Built by an active broker. Grounded in live market data.
 
 ---
 
@@ -49,7 +49,7 @@ Run in order for a complete decision. Jump in anywhere for specific needs.
 
 | File | Purpose |
 |---|---|
-| `MARKET-CONTEXT.md` | Live Houston + SA industrial market data. Load with every workflow. |
+| `MARKET-CONTEXT.md` | Houston + SA industrial market data. Load with every workflow. |
 | `GLOSSARY.md` | Every industrial RE term defined in plain English |
 | `INCENTIVES.md` | Texas tax abatements, grants, exemptions worth pursuing |
 | `BROKER-GUIDE.md` | How to work with (and without) an industrial broker |
@@ -72,18 +72,13 @@ I'm looking for industrial space. Please run the intake workflow with me.
 
 ---
 
-## Self-Improving Design
+## Keeping It Current
 
-This repo is built to get better without manual maintenance:
-
-**Weekly market refresh (autoresearch loop):**
-- `autoresearch/market_refresh.ipynb` — Colab notebook that searches the web for fresh market data, updates `MARKET-CONTEXT.md`, and analyzes workflow files for improvement opportunities
-- Run manually every Monday, or automate with GitHub Actions (see notebook for config)
+**Market context:** Update `MARKET-CONTEXT.md` manually when you have fresh market intel — cap rates, vacancy, absorption, notable deals. The workflows use whatever you give them.
 
 **Feedback loop:**
 - When a workflow fails → log it in `feedback/KNOWN-ISSUES.md`
 - Every update tracked in `CHANGELOG.md` with version numbers
-- The autoresearch loop flags specific workflow improvements each run
 
 **Versioning:**
 - Each file has a version number in the header
