@@ -5,36 +5,39 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Copy, Check, Lock, Terminal } from "lucide-react"
 
-const repoSnippet = `# PromptedCRE Industrial Real Estate Workflow
+const repoSnippet = `# PromptedCRE CLI — Industrial Real Estate Workflow
 
-## Quick Start
+## Install
 \`\`\`bash
-# Clone the workflow repo
-git clone https://github.com/promptedcre/industrial-workflows.git
-
-# Or copy directly into Claude Code / Cursor
-# Paste the /prompts directory into your project
+git clone https://github.com/dueriii/promptedcre-cli.git
+cd promptedcre-cli
+python -m venv .venv && source .venv/bin/activate
+pip install -e .
 \`\`\`
 
-## Available Workflows
+## Commands
 
-├── /requirements
-│   └── intake.md          # Space & operational requirements
-├── /search
-│   └── filters.md         # Market search parameters
-├── /evaluation
-│   ├── survey.md          # Property evaluation framework
-│   └── comparison.md      # Side-by-side analysis
-├── /execution
-│   ├── tour-prep.md       # Pre-tour checklist
-│   ├── landlord-qa.md     # Critical questions
-│   └── deal-strategy.md   # Negotiation framework
-└── /output
-    └── memo-template.md   # Executive summary format
+promptedcre intake       # Define space & operational requirements
+promptedcre filters      # Build CoStar / LoopNet / Crexi search params
+promptedcre add-property # Normalize a property listing
+promptedcre survey       # Evaluate properties against your criteria
+promptedcre compare      # Side-by-side lease vs. purchase analysis
+promptedcre tour         # Pre-tour checklist and walk agenda
+promptedcre questions    # 40+ questions that surface problems and leverage
+promptedcre deal         # LOI structure and negotiation strategy
+promptedcre memo         # Executive decision memo + LOI cover email
 
-## Usage
-Copy any workflow file into your AI assistant context.
-Start with /requirements/intake.md for new searches.`
+## Recommended flow
+
+1. intake → define what you need
+2. filters → build your search
+3. add-property → log each building you find
+4. survey + compare → evaluate your shortlist
+5. tour → prep for site visits
+6. questions + deal → negotiate with leverage
+7. memo → get internal approval
+
+GitHub: https://github.com/dueriii/promptedcre-cli`
 
 export function UnlockRepo() {
   const [email, setEmail] = useState("")
@@ -70,7 +73,7 @@ export function UnlockRepo() {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
-            Unlock the repo
+            Unlock the CLI
           </h2>
           <p className="text-muted-foreground text-lg">
             Get instant access to the industrial real estate workflow system.
@@ -100,7 +103,7 @@ export function UnlockRepo() {
               className="w-full h-12 text-base font-medium"
               disabled={isLoading}
             >
-              {isLoading ? "Unlocking..." : "Unlock the Repo"}
+              {isLoading ? "Unlocking..." : "Unlock the CLI"}
             </Button>
             <p className="text-xs text-muted-foreground text-center">
               We respect your inbox. No spam, just useful updates.
@@ -113,7 +116,7 @@ export function UnlockRepo() {
               <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-secondary/30">
                 <div className="flex items-center gap-2">
                   <Terminal className="size-4 text-accent" />
-                  <span className="text-sm font-mono text-muted-foreground">industrial-workflows</span>
+                  <span className="text-sm font-mono text-muted-foreground">promptedcre-cli</span>
                 </div>
                 <Button
                   variant="ghost"
@@ -145,10 +148,10 @@ export function UnlockRepo() {
             
             <div className="mt-6 text-center space-y-2">
               <p className="text-sm text-foreground font-medium">
-                Copy into Claude Code, Cursor, or your IDE
+                Run in your terminal. Works with any industrial or manufacturing site search.
               </p>
               <p className="text-sm text-muted-foreground">
-                Start with a structured industrial real estate workflow. Built for warehouse, manufacturing, and factory-oriented site decisions.
+                Start with <code className="font-mono text-xs bg-secondary px-1.5 py-0.5 rounded">promptedcre intake</code> and work through to a broker-ready memo.
               </p>
             </div>
           </div>
