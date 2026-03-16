@@ -64,7 +64,7 @@ export function HumanSupport() {
               asChild
             >
               <a 
-                href="https://calendly.com" /* TODO: Replace with William's Calendly link */
+                href="https://calendly.com/admin-promptedcre"
                 target="_blank" 
                 rel="noopener noreferrer"
               >
