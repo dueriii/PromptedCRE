@@ -7,9 +7,21 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'PromptedCRE | Industrial Real Estate Workflows for Advanced Companies',
-  description: 'PromptedCRE gives advanced industrial companies a structured real-estate repo they can copy into Claude Code, Cursor, or their IDE to evaluate space, compare options, and move faster.',
+  title: 'PromptedCRE — Free AI Agent for Industrial Real Estate',
+  description: 'A free AI agent that helps industrial and manufacturing companies evaluate space, compare buildings, and navigate real estate. No email required. No cost.',
   generator: 'v0.app',
+  openGraph: {
+    title: 'PromptedCRE — Free AI Agent for Industrial Real Estate',
+    description: 'A free AI agent that helps industrial and manufacturing companies evaluate space, compare buildings, and navigate real estate. No email required. No cost.',
+    url: 'https://promptedcre.com',
+    siteName: 'PromptedCRE',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'PromptedCRE — Free AI Agent for Industrial Real Estate',
+    description: 'A free AI agent that helps industrial and manufacturing companies evaluate space, compare buildings, and navigate real estate.',
+  },
   icons: {
     icon: [
       {
