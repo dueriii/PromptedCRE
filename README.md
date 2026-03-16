@@ -1,41 +1,38 @@
-# Deeptech Tenant Rep CLI
+# PromptedCRE
 
-A CLI-based tenant-rep real estate system for deeptech and industrial companies.
+**A free AI agent that helps industrial companies navigate real estate.**
 
-It helps a company define its requirement, build search filters, organize properties, compare lease and sale options, prepare for tours, and draft broker-style client memos.
+PromptedCRE gives warehouse, manufacturing, and factory companies a structured real estate workflow they can run inside Claude Code, Cursor, or any AI-enabled IDE. From defining your space requirements to comparing buildings to drafting negotiation memos — the agent handles the analysis so you can focus on your business.
 
-## What this repo is
+**Free. Open source. No strings.**
 
-This repo is designed to feel like **an in-house real estate lead plus a broker**.
+🌐 [promptedcre.com](https://promptedcre.com)
 
-It stays focused on real estate only:
-- requirement capture
-- search filter translation
-- property survey and comparison
-- tour prep
-- landlord questions
-- LOI / deal framing
-- client-facing memo generation
+---
 
-## Commands
+## What it does
 
-- `intake` — create a requirement summary
-- `filters` — translate requirements into CoStar / LoopNet / Crexi search filters
-- `add-property` — normalize a property file into a standard format
-- `survey` — generate a property survey
-- `compare` — compare properties by location, pricing, and functionality
-- `tour` — build a tour agenda and walk checklist
-- `questions` — draft landlord / broker follow-up questions
-- `deal` — outline LOI and deal strategy points
-- `memo` — create a polished client memo with internal notes
+PromptedCRE is designed to feel like having an in-house real estate lead. It stays focused on real estate:
+
+| Module | What it does |
+|---|---|
+| **Intake** | Captures your space needs, operational constraints, and location parameters |
+| **Search Filters** | Translates requirements into market-ready search criteria for CoStar, LoopNet, or Crexi |
+| **Property Survey** | Evaluates properties systematically against your defined criteria |
+| **Property Comparison** | Side-by-side analysis — lease vs. purchase, building vs. building |
+| **Tour Prep** | Pre-tour checklists and observation frameworks for site visits |
+| **Landlord Questions** | Critical questions for landlords, developers, and seller reps |
+| **Deal Guidance** | Framework for negotiation strategy and deal structure |
+| **Memo Output** | Executive summaries and decision memos for your team |
 
 ## Quick start
 
 ```bash
+git clone https://github.com/dueriii/promptedcre-cli.git
+cd promptedcre-cli
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-python -m pip install -U pip
-python -m pip install -e .
+source .venv/bin/activate
+pip install -e .
 ```
 
 Run the sample flow:
@@ -49,50 +46,26 @@ python main.py compare --properties examples/ --requirement examples/sample_requ
 python main.py memo --properties examples/ --requirement examples/sample_requirement.json
 ```
 
-## Recommended workflow
+## Three ways to use it
 
-1. Run `intake`
-2. Run `filters`
-3. Search CoStar / LoopNet / Crexi manually or with a browser-assisted workflow
-4. Save candidate listings as JSON files
-5. Run `add-property` on each file if needed
-6. Run `survey`
-7. Run `compare`
-8. Run `tour`
-9. Run `questions`
-10. Run `deal`
-11. Run `memo`
+1. **Manual mode** — The agent gives you exact search criteria and analysis. You search listing platforms yourself.
+2. **Post-search mode** — Your broker finds properties. The agent scores, compares, and drafts memos.
+3. **Browser-assisted mode** — Pair with Claude Code + Chrome to search live listings and refine in real time.
 
-## Browser-assisted search workflow
+## How properties are evaluated
 
-This repo is intentionally useful in three modes:
+Every property is scored across three dimensions:
 
-1. **Manual mode** — the CLI gives exact search criteria and analysis, while the user searches listing platforms manually.
-2. **Post-search mode** — the CLI scores and compares properties after the broker finds them.
-3. **Browser-assisted mode** — the repo can be paired with tools like Claude Code + Claude in Chrome so the model can see live listing pages and refine search instructions without requiring full end-to-end automation.
+- **Location** — submarket fit, labor access, freeway access, customer/supplier proximity
+- **Pricing** — asking rate, OPEX, all-in cost, TI needs, capex, relocation cost
+- **Functionality** — clear height, power, loading, office %, yard, parking, HVAC, crane, floor load
 
-## Core evaluation framework
+## Want a human in the loop?
 
-Every property is evaluated through three top-level buckets:
+PromptedCRE handles the analysis. When you're ready to tour buildings, negotiate a lease, or structure an acquisition — connect with an experienced industrial real estate advisor.
 
-### 1. Location
-Examples: submarket fit, labor access, freeway access, management proximity, customer/supplier access, municipality, image.
+**[Book a call](https://promptedcre.com)** — representation is free to you (landlord/seller pays broker fees).
 
-### 2. Pricing
-Examples: asking rate, OPEX, all-in cost, TI needs, landlord work, sale price, capex, relocation cost.
+## License
 
-### 3. Functionality
-Examples: clear height, power, loading, office %, yard, parking, HVAC, crane, floor load, column spacing, layout, expansion land.
-
-## Folder structure
-
-```text
-deeptech-tenant-rep-cli/
-├── README.md
-├── pyproject.toml
-├── main.py
-├── data/
-├── examples/
-├── src/tenant_rep/
-└── tests/
-```
+MIT

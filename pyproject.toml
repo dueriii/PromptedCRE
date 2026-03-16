@@ -3,13 +3,13 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "deeptech-tenant-rep-cli"
-version = "0.1.0"
-description = "CLI-based tenant rep real estate workflow for deeptech and industrial companies"
+name = "promptedcre"
+version = "0.2.0"
+description = "AI agent for industrial real estate — intake, search, compare, tour, deal, memo"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
-authors = [{name = "OpenAI Starter Repo"}]
+authors = [{name = "William Alcorn"}]
 dependencies = []
 
 [project.scripts]
