@@ -10,7 +10,7 @@ import {
 const faqs = [
   {
     question: "What is PromptedCRE?",
-    answer: "PromptedCRE is a structured industrial real estate workflow system designed for advanced industrial companies. It provides ready-to-use prompts and frameworks that you can copy directly into Claude Code, Cursor, or any IDE to systematically handle industrial real estate decisions.",
+    answer: "PromptedCRE is a free AI agent for industrial real estate. It provides structured workflows you can run inside Claude Code, Cursor, or any IDE to systematically evaluate space, compare buildings, and make smarter real estate decisions.",
   },
   {
     question: "Who is this for?",
@@ -29,8 +29,8 @@ const faqs = [
     answer: "No. The workflows support both lease and purchase transactions. Whether you're evaluating a warehouse lease, considering buying a manufacturing facility, or comparing multiple site options, the workflows apply.",
   },
   {
-    question: "What happens after I submit my email?",
-    answer: "You'll immediately unlock the repo section on this page with copy-paste access to the industrial real estate workflows. You may also receive occasional updates about new workflow releases or features.",
+    question: "How much does it cost?",
+    answer: "Nothing. The agent is completely free and open source. If you eventually want human support — leasing, site search, acquisitions — you can book a call. Representation is free to you too, because the landlord or seller pays broker fees.",
   },
   {
     question: "Can I talk to a real person?",

@@ -29,7 +29,7 @@ export function HeroSection() {
             </h1>
             
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-              PromptedCRE gives industrial companies a structured real-estate repo they can copy into Claude Code, Cursor, or their IDE to evaluate space, compare options, and move faster.
+              PromptedCRE is a free AI agent that helps industrial companies evaluate space, compare buildings, and navigate real estate decisions — right inside Claude Code, Cursor, or any IDE.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -38,7 +38,7 @@ export function HeroSection() {
                 className="h-12 px-8 text-base font-medium"
                 onClick={() => scrollToSection("unlock-repo")}
               >
-                Get the Repo
+                Get the Agent — Free
                 <ArrowRight className="ml-2 size-4" />
               </Button>
               <Button 
@@ -52,7 +52,7 @@ export function HeroSection() {
             </div>
             
             <p className="text-sm text-muted-foreground">
-              Unlock the repo after submitting your email. Copy and paste it directly into your workflow.
+              Free and open source. No email required. No strings attached.
             </p>
           </div>
           

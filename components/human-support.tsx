@@ -64,7 +64,7 @@ export function HumanSupport() {
               asChild
             >
               <a 
-                href="https://calendly.com" 
+                href="https://calendly.com" /* TODO: Replace with William's Calendly link */
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -73,7 +73,7 @@ export function HumanSupport() {
               </a>
             </Button>
             <p className="mt-4 text-sm text-muted-foreground">
-              Connect with industrial real estate expertise when execution matters.
+              Representation is free to you — the landlord or seller pays broker fees.
             </p>
           </div>
         </div>
