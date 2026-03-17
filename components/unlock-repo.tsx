@@ -6,35 +6,38 @@ import { Copy, Check, Terminal, Github } from "lucide-react"
 
 const repoSnippet = `# PromptedCRE — Industrial Real Estate Agent
 
-## Install
+## Get Started
 \`\`\`bash
 git clone https://github.com/dueriii/promptedcre-cli.git
 cd promptedcre-cli
-python -m venv .venv && source .venv/bin/activate
-pip install -e .
 \`\`\`
 
-## Commands
+Then open the folder in your AI tool of choice:
+  Claude Code  →  claude        # auto-detects CLAUDE.md
+  Cursor       →  cursor .      # auto-detects .cursor/rules/
+  Codex CLI    →  codex         # auto-detects AGENTS.md
+  Gemini CLI   →  gemini        # auto-detects GEMINI.md
 
-promptedcre intake       # Define space & operational requirements
-promptedcre filters      # Build CoStar / LoopNet / Crexi search params
-promptedcre add-property # Normalize a property listing
-promptedcre survey       # Evaluate properties against your criteria
-promptedcre compare      # Side-by-side lease vs. purchase analysis
-promptedcre tour         # Pre-tour checklist and walk agenda
-promptedcre questions    # 40+ questions that surface problems and leverage
-promptedcre deal         # LOI structure and negotiation strategy
-promptedcre memo         # Executive decision memo + LOI cover email
+## Skills
+
+  intake             # Define space & operational requirements
+  search-filters     # Build CoStar / LoopNet / Crexi search params
+  property-survey    # Evaluate properties against your criteria
+  comparison         # Side-by-side lease vs. purchase analysis
+  tour-prep          # Pre-visit checklist and walk agenda
+  landlord-questions # 45+ questions that surface problems and leverage
+  loi-review         # Letter of Intent drafting and negotiation
+  contract-review    # Lease and purchase agreement analysis
 
 ## Recommended flow
 
 1. intake → define what you need
-2. filters → build your search
-3. add-property → log each building you find
-4. survey + compare → evaluate your shortlist
-5. tour → prep for site visits
-6. questions + deal → negotiate with leverage
-7. memo → get internal approval
+2. search-filters → build your search
+3. property-survey → evaluate your shortlist
+4. comparison → side-by-side analysis
+5. tour-prep → prep for site visits
+6. landlord-questions + loi-review → negotiate with leverage
+7. contract-review → finalize the deal
 
 GitHub: https://github.com/dueriii/promptedcre-cli`
 
@@ -60,7 +63,7 @@ export function UnlockRepo() {
             Stop searching. Start closing.
           </h2>
           <p className="text-muted-foreground text-lg">
-            Clone the repo. Run it in your terminal. Be evaluating buildings in five minutes.
+            Clone the repo. Open it in your AI tool. Be evaluating buildings in five minutes.
           </p>
         </div>
 
@@ -114,7 +117,7 @@ export function UnlockRepo() {
               Works with any industrial site search. Warehouse, factory, or facility.
             </p>
             <p className="text-sm text-muted-foreground">
-              Run <code className="font-mono text-xs bg-secondary px-1.5 py-0.5 rounded">promptedcre intake</code> and go from zero to broker-ready memo.
+              Clone it, open your AI tool, and go from zero to broker-ready analysis.
             </p>
           </div>
         </div>

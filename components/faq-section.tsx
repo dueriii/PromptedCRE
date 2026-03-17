@@ -10,23 +10,23 @@ import {
 const faqs = [
   {
     question: "What is PromptedCRE?",
-    answer: "A free, open-source AI agent for industrial real estate. It runs inside Claude Code, Cursor, or any IDE and walks you through the entire process — from defining your space needs to producing a broker-ready decision memo. Think of it as an industrial real estate department you can spin up in five minutes.",
+    answer: "A free, open-source AI agent configuration for industrial real estate. Clone the repo, open it in Claude Code, Cursor, Codex CLI, or Gemini CLI, and the agent auto-detects — walking you through the entire process from defining space needs to reviewing contracts. Think of it as an industrial real estate department you can spin up in five minutes.",
   },
   {
     question: "Who is this for?",
     answer: "Founders, operators, and teams at industrial and manufacturing companies in the United States. If you're building things — defense tech, advanced manufacturing, robotics, energy infrastructure, food production — and you need space, this is for you. No brokerage overhead. No gatekeepers.",
   },
   {
-    question: "Do I need Claude Code?",
-    answer: "No. The repo works with any AI tool that accepts text prompts — Claude Code, Cursor, VS Code with Copilot, ChatGPT, Claude.ai. Pick your weapon.",
+    question: "Which AI tools does it work with?",
+    answer: "Claude Code, Cursor, Codex CLI, and Gemini CLI all auto-detect the agent configuration when you open the repo. You can also paste the prompts manually into Claude.ai, ChatGPT, or any tool that accepts text. Pick your weapon.",
   },
   {
-    question: "Can I use another IDE?",
-    answer: "Yes. It's markdown files and structured prompts. Works anywhere. Copy, paste, run.",
+    question: "Do I need to install anything?",
+    answer: "No. Just git clone and open the folder in your AI tool. There's no package to install — it's markdown-based skills and templates that your AI tool reads automatically.",
   },
   {
     question: "Is this only for leasing?",
-    answer: "No. Lease or buy — the workflows cover both. Warehouse lease, manufacturing facility purchase, multi-site comparison. Whatever the deal looks like.",
+    answer: "No. Lease or buy — the skills cover both. Warehouse lease, manufacturing facility purchase, multi-site comparison, LOI review, contract analysis. Whatever the deal looks like.",
   },
   {
     question: "How much does it cost?",
