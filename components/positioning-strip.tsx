@@ -3,19 +3,19 @@ import { Factory, Building2, FileStack, Users } from "lucide-react"
 const positions = [
   {
     icon: Factory,
-    text: "Built for advanced industrial companies",
+    text: "Built for builders, not brokers",
   },
   {
     icon: Building2,
-    text: "Industrial real estate only",
+    text: "Warehouses, factories, and facilities",
   },
   {
     icon: FileStack,
-    text: "Lease and sale workflows",
+    text: "Lease it or buy it — we cover both",
   },
   {
     icon: Users,
-    text: "Human + AI support when needed",
+    text: "AI-first. Humans when it counts.",
   },
 ]
 

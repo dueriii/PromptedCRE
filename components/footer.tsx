@@ -20,7 +20,7 @@ export function Footer() {
           </div>
           
           <p className="text-muted-foreground max-w-md">
-            Industrial real estate workflows for advanced industrial companies.
+            Real estate intelligence for the companies building things that matter.
           </p>
           
           {/* CTAs */}
@@ -45,7 +45,7 @@ export function Footer() {
           {/* Copyright */}
           <div className="pt-8 border-t border-border w-full">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} PromptedCRE. Built for American industrial growth.
+              © {new Date().getFullYear()} PromptedCRE. Made in America, for the companies remaking it.
             </p>
           </div>
         </div>

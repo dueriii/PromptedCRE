@@ -10,31 +10,31 @@ import {
 const faqs = [
   {
     question: "What is PromptedCRE?",
-    answer: "PromptedCRE is a free AI agent for industrial real estate. It provides structured workflows you can run inside Claude Code, Cursor, or any IDE to systematically evaluate space, compare buildings, and make smarter real estate decisions.",
+    answer: "A free, open-source AI agent for industrial real estate. It runs inside Claude Code, Cursor, or any IDE and walks you through the entire process — from defining your space needs to producing a broker-ready decision memo. Think of it as an industrial real estate department you can spin up in five minutes.",
   },
   {
     question: "Who is this for?",
-    answer: "PromptedCRE is built for advanced industrial companies, manufacturing startups, and reindustrialization-focused businesses in the United States. It's designed for operators who need to make serious industrial real estate decisions—warehouse leasing, site selection, or property purchases—without the overhead of a traditional brokerage relationship.",
+    answer: "Founders, operators, and teams at industrial and manufacturing companies in the United States. If you're building things — defense tech, advanced manufacturing, robotics, energy infrastructure, food production — and you need space, this is for you. No brokerage overhead. No gatekeepers.",
   },
   {
     question: "Do I need Claude Code?",
-    answer: "No, Claude Code is not required. The workflow repo works with any AI assistant or IDE that accepts text prompts. Claude Code, Cursor, VS Code with Copilot, or even direct use with ChatGPT or Claude.ai all work.",
+    answer: "No. The repo works with any AI tool that accepts text prompts — Claude Code, Cursor, VS Code with Copilot, ChatGPT, Claude.ai. Pick your weapon.",
   },
   {
     question: "Can I use another IDE?",
-    answer: "Yes. The repo consists of markdown files and structured prompts that work with any text-based development environment or AI assistant. Copy and paste wherever you work.",
+    answer: "Yes. It's markdown files and structured prompts. Works anywhere. Copy, paste, run.",
   },
   {
     question: "Is this only for leasing?",
-    answer: "No. The workflows support both lease and purchase transactions. Whether you're evaluating a warehouse lease, considering buying a manufacturing facility, or comparing multiple site options, the workflows apply.",
+    answer: "No. Lease or buy — the workflows cover both. Warehouse lease, manufacturing facility purchase, multi-site comparison. Whatever the deal looks like.",
   },
   {
     question: "How much does it cost?",
-    answer: "Nothing. The agent is completely free and open source. If you eventually want human support — leasing, site search, acquisitions — you can book a call. Representation is free to you too, because the landlord or seller pays broker fees.",
+    answer: "Zero. The agent is free and open source. If you want human support down the line — leasing, site search, acquisitions — book a call. That's free to you too. The landlord or seller pays broker fees. That's how commercial real estate works.",
   },
   {
     question: "Can I talk to a real person?",
-    answer: "Yes. The Book a Call option connects you directly with industrial real estate expertise. This is for companies that want human support for execution—warehouse leasing, site search, purchase evaluation, or factory-oriented real estate decisions.",
+    answer: "Yes. Book a call and you'll talk to someone who knows industrial real estate — not a sales rep reading a script. This is for companies that need boots on the ground for warehouse leasing, site selection, acquisitions, or factory-oriented decisions.",
   },
 ]
 

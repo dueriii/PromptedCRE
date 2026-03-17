@@ -13,42 +13,42 @@ const features = [
   {
     icon: ClipboardCheck,
     title: "Intake",
-    description: "Structured requirement gathering for space, operations, and timeline.",
+    description: "Capture what actually matters — space, power, docks, clear height, timeline. No generic questionnaires.",
   },
   {
     icon: Filter,
     title: "Search Filters",
-    description: "Market-ready parameters for submarket, size, and building specs.",
+    description: "Drop-in parameters for CoStar, LoopNet, and Crexi. Search like you know the market — because now you do.",
   },
   {
     icon: Map,
     title: "Property Survey",
-    description: "Systematic property evaluation against your defined criteria.",
+    description: "Score every building against your real criteria. Kill the bad options fast.",
   },
   {
     icon: Scale,
     title: "Property Comparison",
-    description: "Side-by-side analysis of lease vs. purchase, building vs. building.",
+    description: "Lease vs. buy. Building A vs. Building B. See the numbers, make the call.",
   },
   {
     icon: Calendar,
     title: "Tour Prep",
-    description: "Pre-tour checklists and observation frameworks for site visits.",
+    description: "Walk into every site visit knowing exactly what to look for and what to ask.",
   },
   {
     icon: HelpCircle,
     title: "Landlord Questions",
-    description: "Critical questions for landlords, developers, and seller reps.",
+    description: "40+ questions that surface hidden problems and create negotiation leverage.",
   },
   {
     icon: Target,
     title: "Deal Guidance",
-    description: "Framework for negotiation strategy and deal structure decisions.",
+    description: "LOI structure, negotiation strategy, and deal terms — built for operators, not lawyers.",
   },
   {
     icon: FileText,
     title: "Memo Output",
-    description: "Executive summaries and decision memos for internal stakeholders.",
+    description: "Executive decision memos your board and leadership team will actually read.",
   },
 ]
 
@@ -58,10 +58,10 @@ export function RepoFeatures() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
-            What the repo does
+            Everything you need. Nothing you don&apos;t.
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A complete industrial real estate workflow system.
+            Eight workflows. One repo. The entire industrial real estate process from first search to signed deal.
           </p>
         </div>
 

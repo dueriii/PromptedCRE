@@ -4,26 +4,26 @@ const steps = [
   {
     number: "01",
     icon: ClipboardList,
-    title: "Define your requirement",
-    description: "Input your space needs, operational constraints, and location parameters.",
+    title: "Tell it what you need",
+    description: "Square footage, clear height, power, docks, rail — the agent captures everything that matters for your operation.",
   },
   {
     number: "02",
     icon: Search,
-    title: "Generate search instructions",
-    description: "Get structured market filters ready for broker outreach or direct research.",
+    title: "Search the market",
+    description: "Get precise filters you can drop straight into CoStar, LoopNet, or hand to a broker. No more guessing.",
   },
   {
     number: "03",
     icon: BarChart3,
-    title: "Compare buildings and sites",
-    description: "Evaluate properties systematically with clear comparison frameworks.",
+    title: "Compare and decide",
+    description: "Side-by-side building analysis. Lease vs. buy. Building A vs. Building B. Clear signal, no noise.",
   },
   {
     number: "04",
     icon: UserCheck,
-    title: "Bring in a human when needed",
-    description: "Connect with industrial real estate expertise for execution support.",
+    title: "Bring in the humans",
+    description: "When it's time to negotiate, tour, or close — connect with industrial brokers who actually know this world.",
   },
 ]
 
@@ -33,10 +33,10 @@ export function HowItWorks() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
-            How it works
+            From requirement to signed deal
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A structured workflow for industrial real estate decisions.
+            Four steps. No fluff. Real estate decisions at the speed your company moves.
           </p>
         </div>
 

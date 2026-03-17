@@ -1,11 +1,11 @@
 import { Check } from "lucide-react"
 
 const differentiators = [
-  "Structured workflows built for industrial occupiers",
-  "Not a brokerage website or listing portal",
-  "Works directly in your IDE and AI tools",
-  "Built for warehouse, manufacturing, and factory decisions",
-  "Integrates human expertise when execution matters",
+  "Built for operators who build things — not paper-pushers who push listings",
+  "Not a brokerage site. Not a portal. Not another SaaS dashboard.",
+  "Runs in your IDE, your terminal, your AI tools — wherever you already work",
+  "Purpose-built for warehouses, factories, and manufacturing facilities",
+  "Human brokers on standby when you need boots on the ground",
 ]
 
 export function WhySection() {
@@ -14,11 +14,11 @@ export function WhySection() {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-6">
-            Why PromptedCRE
+            The old way is broken
           </h2>
-          
+
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            This is different from generic software and different from a traditional brokerage website. PromptedCRE gives advanced industrial companies a structured industrial real estate workflow that feels like having an internal real estate function plus outside execution support.
+            Industrial companies are building the future — advanced manufacturing, defense tech, robotics, energy infrastructure — and they&apos;re stuck navigating real estate with cold calls and PDF brochures. PromptedCRE gives you an internal real estate function on day one, plus human execution when it matters.
           </p>
           
           <div className="space-y-4">
