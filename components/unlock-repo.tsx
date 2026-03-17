@@ -53,14 +53,14 @@ export function UnlockRepo() {
         <div className="max-w-2xl mx-auto text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-accent/30 bg-accent/5 text-sm text-accent mb-6">
             <Github className="size-3.5" />
-            Free & Open Source
+            Free. Open Source. No Catch.
           </div>
-          
+
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
-            Get the Agent
+            Stop searching. Start closing.
           </h2>
           <p className="text-muted-foreground text-lg">
-            Clone the repo. Run it in your IDE. Start evaluating buildings in minutes.
+            Clone the repo. Run it in your terminal. Be evaluating buildings in five minutes.
           </p>
         </div>
 
@@ -111,10 +111,10 @@ export function UnlockRepo() {
 
           <div className="mt-6 text-center space-y-2">
             <p className="text-sm text-foreground font-medium">
-              Run in your terminal. Works with any industrial or manufacturing site search.
+              Works with any industrial site search. Warehouse, factory, or facility.
             </p>
             <p className="text-sm text-muted-foreground">
-              Start with <code className="font-mono text-xs bg-secondary px-1.5 py-0.5 rounded">promptedcre intake</code> and work through to a broker-ready memo.
+              Run <code className="font-mono text-xs bg-secondary px-1.5 py-0.5 rounded">promptedcre intake</code> and go from zero to broker-ready memo.
             </p>
           </div>
         </div>

@@ -20,39 +20,39 @@ export function HeroSection() {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-border bg-secondary/50 text-sm text-muted-foreground">
               <span className="size-1.5 rounded-full bg-accent animate-pulse" />
-              Industrial Real Estate Workflows
+              For the companies rebuilding America
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-balance leading-[1.1]">
-              Real estate workflows for{" "}
-              <span className="text-muted-foreground">advanced industrial companies</span>
+              You make physical things.{" "}
+              <span className="text-muted-foreground">We handle the real estate.</span>
             </h1>
-            
+
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-              PromptedCRE is a free AI agent that helps industrial companies evaluate space, compare buildings, and navigate real estate decisions — right inside Claude Code, Cursor, or any IDE.
+              PromptedCRE is a free AI agent that gives manufacturers, operators, and industrial founders the real estate firepower they deserve — find space, compare buildings, and close deals without gatekeepers, fees, or nonsense.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="h-12 px-8 text-base font-medium"
                 onClick={() => scrollToSection("unlock-repo")}
               >
-                Get the Agent — Free
+                Get the Agent — It&apos;s Free
                 <ArrowRight className="ml-2 size-4" />
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
+              <Button
+                variant="outline"
+                size="lg"
                 className="h-12 px-8 text-base font-medium"
                 onClick={() => scrollToSection("human-support")}
               >
-                Book a Call
+                Talk to a Human
               </Button>
             </div>
-            
+
             <p className="text-sm text-muted-foreground">
-              Free and open source. No email required. No strings attached.
+              Open source. No email. No strings. Just ship.
             </p>
           </div>
           
@@ -113,7 +113,7 @@ export function HeroSection() {
                 
                 <div className="flex items-center gap-2 text-muted-foreground mt-4">
                   <span className="text-green-500">✓</span>
-                  <span className="text-xs">Workflow loaded. Ready for evaluation.</span>
+                  <span className="text-xs">Ready. Let&apos;s find your building.</span>
                 </div>
               </div>
             </div>

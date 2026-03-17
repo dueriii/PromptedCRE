@@ -27,7 +27,7 @@ export function Header() {
               className="hidden sm:inline-flex"
               onClick={() => scrollToSection("human-support")}
             >
-              Book a Call
+              Talk to a Human
             </Button>
             <Button 
               size="sm"

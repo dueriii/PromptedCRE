@@ -7,22 +7,22 @@ const supportAreas = [
   {
     icon: Building2,
     title: "Warehouse leasing",
-    description: "Navigate lease negotiations and market positioning.",
+    description: "Negotiate hard. Get the right terms. We've done this hundreds of times.",
   },
   {
     icon: MapPin,
-    title: "Industrial site search",
-    description: "Identify and evaluate locations for your operations.",
+    title: "Site selection",
+    description: "Find the right location for your operation — not just what's listed online.",
   },
   {
     icon: FileText,
-    title: "Purchase opportunities",
-    description: "Assess acquisition targets and deal structures.",
+    title: "Acquisitions",
+    description: "Buying a building? We'll help you structure the deal and avoid the landmines.",
   },
   {
     icon: Factory,
-    title: "Factory-oriented decisions",
-    description: "Real estate support for manufacturing operations.",
+    title: "Factory + manufacturing",
+    description: "Real estate decisions for companies that actually make things.",
   },
 ]
 
@@ -33,10 +33,10 @@ export function HumanSupport() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
-              Human in the loop
+              AI gets you started. Humans get it done.
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              When you need real expertise for industrial real estate execution, connect directly with experienced support.
+              When it&apos;s time to tour buildings, negotiate terms, or close a deal — you want someone who&apos;s been in the room before.
             </p>
           </div>
 
@@ -73,7 +73,7 @@ export function HumanSupport() {
               </a>
             </Button>
             <p className="mt-4 text-sm text-muted-foreground">
-              Representation is free to you — the landlord or seller pays broker fees.
+              Representation costs you nothing — the landlord or seller pays. That&apos;s how this industry works.
             </p>
           </div>
         </div>
