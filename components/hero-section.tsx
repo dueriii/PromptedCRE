@@ -24,8 +24,7 @@ export function HeroSection() {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-balance leading-[1.1]">
-              You make physical things.{" "}
-              <span className="text-muted-foreground">We handle the real estate.</span>
+              Real Estate Intelligence for American Builders
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
