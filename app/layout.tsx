@@ -7,19 +7,19 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'PromptedCRE — Real Estate Intelligence for the Companies Rebuilding America',
+  title: 'PromptedCRE — Real Estate Intelligence for American Builders',
   description: 'The free AI agent for industrial real estate. Built for founders, operators, and builders who make physical things. Find space, compare buildings, close deals — no brokers, no gatekeepers.',
   generator: 'v0.app',
   openGraph: {
-    title: 'PromptedCRE — Real Estate Intelligence for the Companies Rebuilding America',
+    title: 'PromptedCRE — Real Estate Intelligence for American Builders',
     description: 'The free AI agent for industrial real estate. Built for founders, operators, and builders who make physical things. Find space, compare buildings, close deals — no brokers, no gatekeepers.',
     url: 'https://promptedcre.com',
     siteName: 'PromptedCRE',
     type: 'website',
   },
   twitter: {
-    card: 'summary',
-    title: 'PromptedCRE — Real Estate Intelligence for the Companies Rebuilding America',
+    card: 'summary_large_image',
+    title: 'PromptedCRE — Real Estate Intelligence for American Builders',
     description: 'The free AI agent for industrial real estate. Built for founders, operators, and builders who make physical things.',
   },
   icons: {
