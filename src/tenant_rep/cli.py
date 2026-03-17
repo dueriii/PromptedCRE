@@ -35,7 +35,7 @@ def _emit(rendered: str, output: str | None) -> None:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description='Deeptech tenant rep CLI')
+    parser = argparse.ArgumentParser(prog='promptedcre', description='Free AI agent for industrial real estate')
     sub = parser.add_subparsers(dest='command', required=True)
 
     p = sub.add_parser('intake')

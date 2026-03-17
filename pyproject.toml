@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "promptedcre"
 version = "0.2.0"
-description = "AI agent for industrial real estate — intake, search, compare, tour, deal, memo"
+description = "Free AI agent that gives manufacturers, operators, and industrial founders the real estate firepower they deserve"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
@@ -13,7 +13,7 @@ authors = [{name = "William Alcorn"}]
 dependencies = []
 
 [project.scripts]
-tenant-rep = "tenant_rep.cli:main"
+promptedcre = "tenant_rep.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

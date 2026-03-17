@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PromptedCRE — Industrial Real Estate Agent for Advanced Companies</title>
-  <meta name="description" content="A free, open-source AI agent that acts as your in-house real estate lead. Built for deeptech and industrial companies who need space to build." />
+  <title>PromptedCRE — Free AI Agent for Industrial Real Estate</title>
+  <meta name="description" content="A free AI agent that gives manufacturers, operators, and industrial founders the real estate firepower they deserve — find space, compare buildings, and close deals." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
@@ -79,7 +79,7 @@
     .subhead {
       font-size: 1.15rem;
       color: var(--gray-600);
-      max-width: 560px;
+      max-width: 600px;
       margin: 0 auto 2.5rem;
     }
     .cta-group {
@@ -195,6 +195,33 @@
       color: var(--gray-600);
     }
 
+    /* WORKFLOWS */
+    .workflows {
+      max-width: 900px;
+      margin: 0 auto 5rem;
+      padding: 0 2rem;
+    }
+    .workflow-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .workflow-card {
+      background: var(--gray-50);
+      border-radius: 12px;
+      padding: 1.25rem;
+      border: 1px solid var(--gray-100);
+    }
+    .workflow-card h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+    .workflow-card p {
+      font-size: 0.85rem;
+      color: var(--gray-600);
+    }
+
     /* COMMANDS */
     .commands {
       background: var(--gray-50);
@@ -209,7 +236,7 @@
     }
     .cmd-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       gap: 0.5rem;
     }
     .cmd {
@@ -276,7 +303,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: gap;
+      flex-wrap: wrap;
       gap: 1rem;
     }
     footer p { font-size: 0.85rem; color: var(--gray-400); }
@@ -306,8 +333,8 @@
   <!-- HERO -->
   <div class="hero">
     <div class="badge">Free & Open Source</div>
-    <h1>Your in-house real estate lead — built for industrial companies</h1>
-    <p class="subhead">A free AI agent that helps deeptech and manufacturing companies find space, evaluate buildings, and navigate real estate — without needing a broker on retainer.</p>
+    <h1>You make physical things. We handle the real estate.</h1>
+    <p class="subhead">PromptedCRE is a free AI agent that gives manufacturers, operators, and industrial founders the real estate firepower they deserve — find space, compare buildings, and close deals without gatekeepers, fees, or nonsense.</p>
     <div class="cta-group">
       <a href="https://github.com/dueriii/promptedcre-cli" class="btn-primary">
         <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -323,55 +350,99 @@
   <div class="for-who">
     <p>Built for companies like</p>
     <div class="tags">
+      <span class="tag">Manufacturers</span>
+      <span class="tag">Operators</span>
+      <span class="tag">Industrial Founders</span>
       <span class="tag">Defense Tech</span>
       <span class="tag">Aerospace</span>
       <span class="tag">Advanced Manufacturing</span>
       <span class="tag">Robotics</span>
       <span class="tag">Energy & Climate</span>
-      <span class="tag">Industrial Hardware</span>
-      <span class="tag">Dual-Use Tech</span>
     </div>
   </div>
 
   <!-- HOW IT WORKS -->
   <div class="section">
     <div class="section-label">How it works</div>
-    <h2>From requirement to lease — all in Claude Code</h2>
+    <h2>From requirement to lease — four steps</h2>
     <div class="steps">
       <div class="step">
         <div class="step-num">01</div>
-        <h3>Define your requirement</h3>
-        <p>Run <code>intake</code> to capture power, clear height, loading, yard, location, and timeline.</p>
+        <h3>Tell it what you need</h3>
+        <p>Capture your space, power, docks, clear height, timeline, and location requirements.</p>
       </div>
       <div class="step">
         <div class="step-num">02</div>
-        <h3>Build search filters</h3>
-        <p>Translate your requirement into exact CoStar / LoopNet / Crexi search criteria.</p>
+        <h3>Search the market</h3>
+        <p>Get drop-in search parameters for CoStar, LoopNet, and Crexi.</p>
       </div>
       <div class="step">
         <div class="step-num">03</div>
-        <h3>Score & compare</h3>
-        <p>Add candidate properties and get a ranked comparison across location, pricing, and functionality.</p>
+        <h3>Compare and decide</h3>
+        <p>Score every building against your real criteria. Lease vs. buy. Building A vs. Building B.</p>
       </div>
       <div class="step">
         <div class="step-num">04</div>
-        <h3>Prepare & negotiate</h3>
-        <p>Generate tour checklists, landlord questions, LOI strategy, and a polished client memo.</p>
+        <h3>Bring in the humans</h3>
+        <p>Industrial brokers on standby — tour buildings, negotiate leases, and close deals with expert support.</p>
       </div>
     </div>
+  </div>
 
-    <div style="margin-top: 2rem;" class="commands">
+  <!-- 8 WORKFLOWS -->
+  <div class="workflows">
+    <div class="section-label">8 Workflows</div>
+    <h2 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 2rem;">Everything you need, nothing you don't</h2>
+    <div class="workflow-grid">
+      <div class="workflow-card">
+        <h3>Intake</h3>
+        <p>Capture space, power, docks, clear height, timeline.</p>
+      </div>
+      <div class="workflow-card">
+        <h3>Search Filters</h3>
+        <p>Drop-in parameters for CoStar, LoopNet, and Crexi.</p>
+      </div>
+      <div class="workflow-card">
+        <h3>Property Survey</h3>
+        <p>Score every building against your real criteria.</p>
+      </div>
+      <div class="workflow-card">
+        <h3>Property Comparison</h3>
+        <p>Lease vs. buy. Building A vs. Building B.</p>
+      </div>
+      <div class="workflow-card">
+        <h3>Tour Prep</h3>
+        <p>Pre-tour checklist and walk agenda.</p>
+      </div>
+      <div class="workflow-card">
+        <h3>Landlord Questions</h3>
+        <p>40+ questions that surface hidden problems.</p>
+      </div>
+      <div class="workflow-card">
+        <h3>Deal Guidance</h3>
+        <p>LOI structure and negotiation strategy.</p>
+      </div>
+      <div class="workflow-card">
+        <h3>Memo Output</h3>
+        <p>Executive decision memos.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMMANDS -->
+  <div class="section">
+    <div class="commands">
       <p>Available commands</p>
       <div class="cmd-grid">
-        <div class="cmd"><code>intake</code><span>Capture requirements</span></div>
-        <div class="cmd"><code>filters</code><span>Build search criteria</span></div>
-        <div class="cmd"><code>add-property</code><span>Normalize a listing</span></div>
-        <div class="cmd"><code>survey</code><span>Property survey</span></div>
-        <div class="cmd"><code>compare</code><span>Rank options</span></div>
-        <div class="cmd"><code>tour</code><span>Tour agenda + checklist</span></div>
-        <div class="cmd"><code>questions</code><span>Landlord follow-ups</span></div>
-        <div class="cmd"><code>deal</code><span>LOI strategy</span></div>
-        <div class="cmd"><code>memo</code><span>Client memo</span></div>
+        <div class="cmd"><code>promptedcre intake</code><span>Capture requirements</span></div>
+        <div class="cmd"><code>promptedcre filters</code><span>Build search criteria</span></div>
+        <div class="cmd"><code>promptedcre add-property</code><span>Normalize a listing</span></div>
+        <div class="cmd"><code>promptedcre survey</code><span>Property survey</span></div>
+        <div class="cmd"><code>promptedcre compare</code><span>Rank options</span></div>
+        <div class="cmd"><code>promptedcre tour</code><span>Tour agenda + checklist</span></div>
+        <div class="cmd"><code>promptedcre questions</code><span>Landlord follow-ups</span></div>
+        <div class="cmd"><code>promptedcre deal</code><span>LOI strategy</span></div>
+        <div class="cmd"><code>promptedcre memo</code><span>Client memo</span></div>
       </div>
     </div>
   </div>
@@ -381,7 +452,7 @@
     <div class="advisor-block">
       <div class="section-label">Human in the loop</div>
       <h2>Want an expert at the table?</h2>
-      <p>The agent handles the analysis. When you're ready to negotiate, tour buildings, or structure a deal — connect with an industrial real estate advisor who knows this market.</p>
+      <p>The agent handles the analysis. When you're ready to tour buildings, negotiate a lease, or structure an acquisition — connect with an industrial real estate advisor who knows this market.</p>
       <a href="https://calendly.com/admin-promptedcre" class="btn-white">
         Book a free 30-min call →
       </a>
@@ -390,7 +461,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 PromptedCRE</p>
+    <p>&copy; 2026 PromptedCRE</p>
     <div style="display:flex; gap:1.5rem;">
       <a href="https://github.com/dueriii/promptedcre-cli">GitHub</a>
       <a href="mailto:william.alcorn@finialgroup.com">Contact</a>
