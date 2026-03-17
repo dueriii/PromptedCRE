@@ -1,15 +1,21 @@
-import { 
-  ClipboardCheck, 
-  Filter, 
-  Map, 
-  Scale, 
-  Calendar, 
-  HelpCircle, 
-  Target, 
-  FileText 
+import {
+  ClipboardCheck,
+  Filter,
+  Map,
+  Scale,
+  Calendar,
+  HelpCircle,
+  Target,
+  FileText,
+  BookOpen
 } from "lucide-react"
 
 const features = [
+  {
+    icon: BookOpen,
+    title: "Using PromptedCRE",
+    description: "Orientation on how the system works — skills, templates, and recommended workflows. Get productive in minutes.",
+  },
   {
     icon: ClipboardCheck,
     title: "Intake",
@@ -23,12 +29,12 @@ const features = [
   {
     icon: Map,
     title: "Property Survey",
-    description: "Score every building against your real criteria. Kill the bad options fast.",
+    description: "Score every building across location, pricing, and functionality. Kill the bad options fast.",
   },
   {
     icon: Scale,
-    title: "Property Comparison",
-    description: "Lease vs. buy. Building A vs. Building B. See the numbers, make the call.",
+    title: "Comparison",
+    description: "Lease vs. buy. Building A vs. Building B. Side-by-side analysis with the comparison matrix template.",
   },
   {
     icon: Calendar,
@@ -38,17 +44,17 @@ const features = [
   {
     icon: HelpCircle,
     title: "Landlord Questions",
-    description: "40+ questions that surface hidden problems and create negotiation leverage.",
+    description: "45+ strategic questions that surface hidden problems and create negotiation leverage.",
   },
   {
     icon: Target,
-    title: "Deal Guidance",
-    description: "LOI structure, negotiation strategy, and deal terms — built for operators, not lawyers.",
+    title: "LOI Review",
+    description: "Letter of Intent drafting, negotiation strategy, and deal terms — built for operators, not lawyers.",
   },
   {
     icon: FileText,
-    title: "Memo Output",
-    description: "Executive decision memos your board and leadership team will actually read.",
+    title: "Contract Review",
+    description: "Lease and purchase agreement analysis. Understand what you're signing before you sign it.",
   },
 ]
 
@@ -61,11 +67,11 @@ export function RepoFeatures() {
             Everything you need. Nothing you don&apos;t.
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Eight workflows. One repo. The entire industrial real estate process from first search to signed deal.
+            Nine skills. Three templates. The entire industrial real estate process from first search to signed deal.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {features.map((feature, index) => (
             <div
               key={index}

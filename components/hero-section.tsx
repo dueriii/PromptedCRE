@@ -67,7 +67,7 @@ export function HeroSection() {
                   <div className="size-3 rounded-full bg-yellow-500/60" />
                   <div className="size-3 rounded-full bg-green-500/60" />
                 </div>
-                <span className="text-xs text-muted-foreground font-mono ml-2">prompted-cre/industrial-workflows</span>
+                <span className="text-xs text-muted-foreground font-mono ml-2">promptedcre-cli</span>
               </div>
               
               {/* Terminal content */}
@@ -75,23 +75,29 @@ export function HeroSection() {
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Terminal className="size-4" />
                   <span className="text-accent">$</span>
-                  <span>claude repo:add industrial-workflows</span>
+                  <span>git clone promptedcre-cli && cd promptedcre-cli</span>
                 </div>
-                
-                <div className="space-y-2 pl-6 border-l border-border">
+
+                <div className="flex items-center gap-2 text-muted-foreground mt-1">
+                  <Terminal className="size-4 opacity-0" />
+                  <span className="text-accent">$</span>
+                  <span>claude  <span className="text-muted-foreground text-xs">// or cursor, codex, gemini</span></span>
+                </div>
+
+                <div className="space-y-2 pl-6 border-l border-border mt-3">
                   <div className="flex items-center gap-3">
                     <GitBranch className="size-4 text-accent" />
-                    <span className="text-foreground">/requirements</span>
+                    <span className="text-foreground">intake</span>
                     <span className="text-muted-foreground text-xs">define space needs</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Layers className="size-4 text-accent" />
-                    <span className="text-foreground">/search-filters</span>
+                    <span className="text-foreground">search-filters</span>
                     <span className="text-muted-foreground text-xs">market parameters</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Building2 className="size-4 text-accent" />
-                    <span className="text-foreground">/property-survey</span>
+                    <span className="text-foreground">property-survey</span>
                     <span className="text-muted-foreground text-xs">evaluate options</span>
                   </div>
                 </div>

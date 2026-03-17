@@ -3,7 +3,7 @@ import { Check } from "lucide-react"
 const differentiators = [
   "Built for operators who build things — not paper-pushers who push listings",
   "Not a brokerage site. Not a portal. Not another SaaS dashboard.",
-  "Runs in your IDE, your terminal, your AI tools — wherever you already work",
+  "Auto-detects in Claude Code, Cursor, Codex CLI, and Gemini CLI — wherever you already work",
   "Purpose-built for warehouses, factories, and manufacturing facilities",
   "Human brokers on standby when you need boots on the ground",
 ]
