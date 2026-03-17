@@ -1,29 +1,38 @@
 # PromptedCRE
 
-**A free AI agent that helps industrial companies navigate real estate.**
+**You make physical things. We handle the real estate.**
 
-PromptedCRE gives warehouse, manufacturing, and factory companies a structured real estate workflow they can run inside Claude Code, Cursor, or any AI-enabled IDE. From defining your space requirements to comparing buildings to drafting negotiation memos — the agent handles the analysis so you can focus on your business.
+PromptedCRE is a free AI agent that gives manufacturers, operators, and industrial founders the real estate firepower they deserve — find space, compare buildings, and close deals without gatekeepers, fees, or nonsense.
 
 **Free. Open source. No strings.**
 
-🌐 [promptedcre.com](https://promptedcre.com)
+[promptedcre.com](https://promptedcre.com)
 
 ---
 
-## What it does
+## How it works
 
-PromptedCRE is designed to feel like having an in-house real estate lead. It stays focused on real estate:
+1. **Tell it what you need** — Capture your space, power, docks, clear height, timeline, and location requirements.
+2. **Search the market** — Get drop-in search parameters for CoStar, LoopNet, and Crexi.
+3. **Compare and decide** — Score every building against your real criteria. Lease vs. buy. Building A vs. Building B.
+4. **Bring in the humans** — Industrial brokers on standby to tour buildings, negotiate leases, and close deals.
 
-| Module | What it does |
+---
+
+## 8 Workflows
+
+| Workflow | What it does |
 |---|---|
-| **Intake** | Captures your space needs, operational constraints, and location parameters |
-| **Search Filters** | Translates requirements into market-ready search criteria for CoStar, LoopNet, or Crexi |
-| **Property Survey** | Evaluates properties systematically against your defined criteria |
-| **Property Comparison** | Side-by-side analysis — lease vs. purchase, building vs. building |
-| **Tour Prep** | Pre-tour checklists and observation frameworks for site visits |
-| **Landlord Questions** | Critical questions for landlords, developers, and seller reps |
-| **Deal Guidance** | Framework for negotiation strategy and deal structure |
-| **Memo Output** | Executive summaries and decision memos for your team |
+| **Intake** | Capture space, power, docks, clear height, timeline |
+| **Search Filters** | Drop-in parameters for CoStar, LoopNet, and Crexi |
+| **Property Survey** | Score every building against your real criteria |
+| **Property Comparison** | Lease vs. buy. Building A vs. Building B |
+| **Tour Prep** | Pre-tour checklist and walk agenda |
+| **Landlord Questions** | 40+ questions that surface hidden problems |
+| **Deal Guidance** | LOI structure and negotiation strategy |
+| **Memo Output** | Executive decision memos |
+
+---
 
 ## Quick start
 
@@ -35,15 +44,18 @@ source .venv/bin/activate
 pip install -e .
 ```
 
-Run the sample flow:
+## Commands
 
 ```bash
-python main.py intake --input examples/sample_requirement.json
-python main.py filters --input examples/sample_requirement.json
-python main.py add-property --input examples/sample_property_1.json
-python main.py survey --properties examples/
-python main.py compare --properties examples/ --requirement examples/sample_requirement.json
-python main.py memo --properties examples/ --requirement examples/sample_requirement.json
+promptedcre intake --input examples/sample_requirement.json
+promptedcre filters --input examples/sample_requirement.json
+promptedcre add-property --input examples/sample_property_1.json
+promptedcre survey --properties examples/
+promptedcre compare --properties examples/ --requirement examples/sample_requirement.json
+promptedcre tour --properties examples/ --requirement examples/sample_requirement.json
+promptedcre questions --property examples/sample_property_1.json
+promptedcre deal --property examples/sample_property_1.json --requirement examples/sample_requirement.json
+promptedcre memo --properties examples/ --requirement examples/sample_requirement.json
 ```
 
 ## Three ways to use it
@@ -62,9 +74,9 @@ Every property is scored across three dimensions:
 
 ## Want a human in the loop?
 
-PromptedCRE handles the analysis. When you're ready to tour buildings, negotiate a lease, or structure an acquisition — connect with an experienced industrial real estate advisor.
+The agent handles the analysis. When you're ready to tour buildings, negotiate a lease, or structure an acquisition — connect with an industrial real estate advisor who knows this market.
 
-**[Book a call](https://promptedcre.com)** — representation is free to you (landlord/seller pays broker fees).
+**[Book a call](https://calendly.com/admin-promptedcre)** — representation is free to you (landlord/seller pays broker fees).
 
 ## License
 
