@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 
 from tenant_rep.agents.compare_agent import CompareAgent
@@ -12,6 +13,7 @@ from tenant_rep.agents.questions_agent import QuestionsAgent
 from tenant_rep.agents.search_agent import SearchAgent
 from tenant_rep.agents.tour_agent import TourAgent
 from tenant_rep.models.schemas import PropertyRecord, Requirement
+from tenant_rep.utils.banner import show_banner
 from tenant_rep.utils.io import list_property_files, load_json, save_json, save_text
 
 
@@ -85,6 +87,11 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> None:
+    # Show the dashboard when run with no arguments
+    if len(sys.argv) == 1:
+        show_banner()
+        return
+
     args = build_parser().parse_args()
 
     if args.command == 'intake':
