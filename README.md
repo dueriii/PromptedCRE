@@ -1,6 +1,6 @@
 # PromptedCRE
 
-**You make physical things. We handle the real estate.**
+**Real Estate Intelligence for American Builders**
 
 PromptedCRE is a free AI agent for industrial real estate. Clone this repo, open it in your AI tool, and start talking. No installation. No commands. Just a conversation.
 
