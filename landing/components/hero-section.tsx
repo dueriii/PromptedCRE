@@ -77,7 +77,14 @@ export function HeroSection() {
             <div className="relative bg-card border border-border rounded-xl overflow-hidden shadow-2xl">
               {/* Terminal header */}
               <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-secondary/30">
-                <span className="text-sm font-semibold text-foreground">Quick Start</span>
+                <div className="flex items-center gap-2">
+                  <div className="flex gap-1.5">
+                    <div className="size-3 rounded-full bg-red-500/80" />
+                    <div className="size-3 rounded-full bg-yellow-500/80" />
+                    <div className="size-3 rounded-full bg-green-500/80" />
+                  </div>
+                  <span className="text-sm font-semibold text-foreground ml-3">Quick Start</span>
+                </div>
                 <button
                   onClick={handleCopy}
                   className="flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors"
