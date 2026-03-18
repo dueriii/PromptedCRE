@@ -105,6 +105,18 @@ export function HeroSection() {
                 </pre>
               </div>
 
+              {/* Instructions */}
+              <div className="px-4 py-3 border-b border-border">
+                <p className="text-sm text-muted-foreground">
+                  Open the folder in <span className="text-foreground font-medium">Claude</span>, <span className="text-foreground font-medium">Cursor</span>, or your AI tool of choice. Then start with:
+                </p>
+                <div className="mt-2 p-3 rounded-lg bg-secondary/30 border border-border">
+                  <p className="text-sm text-muted-foreground italic leading-relaxed">
+                    &ldquo;I need 15,000–25,000 SF of industrial space in the Houston metro. Manufacturing use, 3-phase power required, 24-foot clear height minimum.&rdquo;
+                  </p>
+                </div>
+              </div>
+
               {/* Available agents */}
               <div className="px-4 py-4">
                 <p className="text-xs text-muted-foreground uppercase tracking-wide mb-3">Available Agents</p>
