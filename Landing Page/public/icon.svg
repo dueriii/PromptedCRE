@@ -1,0 +1,22 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #000000; }
+      .fg { fill: #ffffff; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #ffffff; }
+      .fg { fill: #000000; }
+    }
+  </style>
+  <rect class="bg" width="180" height="180" rx="36" />
+  <text
+    x="90"
+    y="125"
+    class="fg"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-size="110"
+    font-weight="600"
+    text-anchor="middle"
+  >P</text>
+</svg>
