@@ -2,9 +2,7 @@ import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { PositioningStrip } from "@/components/positioning-strip"
 import { HowItWorks } from "@/components/how-it-works"
-import { RepoFeatures } from "@/components/repo-features"
 import { WhySection } from "@/components/why-section"
-import { UnlockRepo } from "@/components/unlock-repo"
 import { HumanSupport } from "@/components/human-support"
 import { FAQSection } from "@/components/faq-section"
 import { Footer } from "@/components/footer"
@@ -16,9 +14,7 @@ export default function Home() {
       <HeroSection />
       <PositioningStrip />
       <HowItWorks />
-      <RepoFeatures />
       <WhySection />
-      <UnlockRepo />
       <HumanSupport />
       <FAQSection />
       <Footer />
