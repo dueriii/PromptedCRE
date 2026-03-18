@@ -54,16 +54,7 @@ export function HeroSection() {
               PromptedCRE is a free AI agent that gives manufacturers, operators, and industrial founders the real estate firepower they deserve — find space, compare buildings, and close deals without gatekeepers, fees, or nonsense.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="h-12 px-8 text-base font-medium"
-                onClick={() => scrollToSection("human-support")}
-              >
-                Talk to a Human
-                <ArrowRight className="ml-2 size-4" />
-              </Button>
-            </div>
+
 
             <p className="text-sm text-muted-foreground">
               Open source. No email. No strings. Just ship.
