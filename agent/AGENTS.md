@@ -14,6 +14,7 @@ Skills live in `skills/`. Each has a `SKILL.md` with activation triggers, checkl
 
 | Skill | When to Use |
 |---|---|
+| `memory` | Always — read at start, write when anything important is learned |
 | `using-promptedcre` | Start of any conversation — orient the user |
 | `intake` | User describes space needs, requirements, or constraints |
 | `search-filters` | Requirements are defined, ready to search the market |
@@ -29,6 +30,18 @@ Skills live in `skills/`. Each has a `SKILL.md` with activation triggers, checkl
 1. **User's explicit instructions** — always highest priority
 2. **Skill workflows** — override your defaults where they conflict
 3. **Your general knowledge** — fill gaps where no skill applies
+
+## Memory
+
+**Read `memory.md` before every task.** It contains active deal context, user preferences, and where you left off.
+
+**When the user corrects you or you learn a new preference, update `memory.md` immediately.** Write it down — don't rely on in-session context. This is how the agent compounds its intelligence over time.
+
+Update `memory.md` when:
+- Intake is confirmed (save the full requirement summary)
+- Properties are shortlisted or eliminated
+- A preference or correction is shared ("stop using tables," "we only want dock-high," etc.)
+- A major milestone passes (LOI submitted, tour scheduled, deal dead)
 
 ## Hard Rules
 
