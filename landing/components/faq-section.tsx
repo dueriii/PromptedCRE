@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react"
 import {
   Accordion,
   AccordionContent,
@@ -7,7 +8,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-const faqs = [
+const CALENDLY_URL = "https://calendly.com/admin-promptedcre"
+
+const faqs: { question: string; answer: React.ReactNode }[] = [
   {
     question: "What is PromptedCRE?",
     answer: "A free, open-source AI agent configuration for industrial real estate. Clone the repo, open it in Claude Code, Cursor, Codex CLI, or Gemini CLI, and the agent auto-detects — walking you through the entire process from defining space needs to reviewing contracts. Think of it as an industrial real estate department you can spin up in five minutes.",
@@ -30,11 +33,11 @@ const faqs = [
   },
   {
     question: "How much does it cost?",
-    answer: "Zero. The agent is free and open source. If you want human support down the line — leasing, site search, acquisitions — book a call. That's free to you too. The landlord or seller pays broker fees. That's how commercial real estate works.",
+    answer: <>Zero. The agent is free and open source. If you want human support down the line — leasing, site search, acquisitions — <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground transition-colors">book a call</a>. That&apos;s free to you too. The landlord or seller pays broker fees. That&apos;s how commercial real estate works.</>,
   },
   {
     question: "Can I talk to a real person?",
-    answer: "Yes. Book a call and you'll talk to someone who knows industrial real estate — not a sales rep reading a script. This is for companies that need boots on the ground for warehouse leasing, site selection, acquisitions, or factory-oriented decisions.",
+    answer: <>Yes. <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground transition-colors">Book a call</a> and you&apos;ll talk to someone who knows industrial real estate — not a sales rep reading a script. This is for companies that need boots on the ground for warehouse leasing, site selection, acquisitions, or factory-oriented decisions.</>,
   },
 ]
 

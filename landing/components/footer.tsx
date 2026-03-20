@@ -18,27 +18,33 @@ export function Footer() {
             </div>
             <span className="text-lg font-semibold tracking-tight">PromptedCRE</span>
           </div>
-          
+
           <p className="text-muted-foreground max-w-md">
             Real estate intelligence for the companies building things that matter.
           </p>
-          
+
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
+            <Button
               size="lg"
               className="h-11 px-6"
               onClick={() => scrollToSection("unlock-repo")}
             >
               Get the Repo
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="lg"
               className="h-11 px-6"
-              onClick={() => scrollToSection("human-support")}
+              asChild
             >
-              Book a Call
+              <a
+                href="https://calendly.com/admin-promptedcre"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book a Call
+              </a>
             </Button>
           </div>
           
