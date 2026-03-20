@@ -18,22 +18,25 @@ export function Header() {
             </div>
             <span className="font-semibold tracking-tight">PromptedCRE</span>
           </div>
-          
+
           {/* CTAs */}
           <div className="flex items-center gap-3">
-            <Button 
-              variant="ghost" 
+            <Button
+              variant="ghost"
               size="sm"
               className="hidden sm:inline-flex"
               onClick={() => scrollToSection("human-support")}
             >
               Talk to a Human
             </Button>
-            <Button 
-              size="sm"
-              onClick={() => scrollToSection("unlock-repo")}
-            >
-              Get the Repo
+            <Button size="sm" asChild>
+              <a
+                href="https://github.com/dueriii/PromptedCRE"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Get the Repo
+              </a>
             </Button>
           </div>
         </div>

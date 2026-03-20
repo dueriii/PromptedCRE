@@ -3,10 +3,6 @@
 import { Button } from "@/components/ui/button"
 
 export function Footer() {
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
-  }
-
   return (
     <footer className="py-16 border-t border-border">
       <div className="container mx-auto px-6">
@@ -25,12 +21,14 @@ export function Footer() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button
-              size="lg"
-              className="h-11 px-6"
-              onClick={() => scrollToSection("unlock-repo")}
-            >
-              Get the Repo
+            <Button size="lg" className="h-11 px-6" asChild>
+              <a
+                href="https://github.com/dueriii/PromptedCRE"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Get the Repo
+              </a>
             </Button>
             <Button
               variant="outline"
