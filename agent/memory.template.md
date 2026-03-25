@@ -2,6 +2,8 @@
 
 This file is your persistent memory. Read it at the start of every conversation. Update it when you learn something new about the user, their company, their deal, or their preferences.
 
+**Setup:** Copy this file to `memory.md` in the same directory. `memory.md` is gitignored — your deal data stays local and private.
+
 ---
 
 ## Instructions
@@ -12,6 +14,7 @@ This file is your persistent memory. Read it at the start of every conversation.
   - You learn a new preference ("don't use tables," "I hate jargon," etc.)
   - You complete a major step (intake confirmed, properties shortlisted, LOI submitted, etc.)
   - The user shares deal-specific context that will matter next session
+- **Multiple deals:** Create a separate section for each active deal (e.g., "Apex — Houston Deal" and "Apex — Dallas Deal"). Ask the user which deal to work on at the start of each session if multiple are active.
 
 ## What to Capture
 

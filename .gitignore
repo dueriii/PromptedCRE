@@ -16,3 +16,7 @@ node_modules/
 .next/
 .DS_Store
 .vercel
+
+# Agent memory — contains deal-specific data (company names, budgets, negotiation strategies)
+# Use agent/memory.template.md to create your own copy
+agent/memory.md
