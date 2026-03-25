@@ -35,12 +35,23 @@ Complete these in order. Ask questions **one or two at a time** — don't dump a
 - [ ] Parking requirements
 
 ### 3. Building Systems
-- [ ] Power: voltage, amperage, 3-phase?
-- [ ] HVAC requirements (warehouse climate control?)
-- [ ] Crane: overhead crane needed? Capacity?
-- [ ] Floor load / slab thickness requirements
-- [ ] Compressed air, gas lines, special utilities
-- [ ] Fire suppression requirements (ESFR, wet/dry?)
+
+#### Power (critical for manufacturing — dig deeper than "480V 3-phase")
+- [ ] Voltage and phase: 480V 3-phase is industrial standard — but confirm
+- [ ] Amperage: What's the total connected load of their equipment?
+- [ ] Panel capacity: Do they need a single main panel or multiple sub-panels?
+- [ ] Transformer: Will existing building transformer handle their load, or do they need an upgrade? (Transformer upgrades cost $50K-$200K and take 6-12 months lead time)
+- [ ] Backup power: Do they need a generator? UPS? What's the criticality of uninterrupted power?
+- [ ] Future growth: Will their power needs increase in 2-3 years? Size for future, not just today.
+
+#### Other Systems
+- [ ] HVAC requirements (warehouse climate control? Temperature/humidity tolerances?)
+- [ ] Crane: overhead crane needed? Bridge or jib? Capacity (tons)? Span?
+- [ ] Floor load / slab thickness requirements (for heavy machinery, high-density racking)
+- [ ] Compressed air: CFM and PSI requirements? Number of drops?
+- [ ] Gas lines (natural gas for heating, process gas for manufacturing)
+- [ ] Fire suppression requirements (ESFR, wet/dry, clean agent for sensitive equipment?)
+- [ ] Dust collection, fume extraction, or ventilation for manufacturing processes
 
 ### 4. Location
 - [ ] Target market / city / submarket
@@ -72,7 +83,10 @@ Then fill in gaps with targeted follow-ups. Group related questions naturally.
 
 Present a **Requirement Summary** using the template in `templates/requirement.md`. Ask the user to confirm or correct it.
 
-Once confirmed, transition to the `search-filters` skill.
+Once confirmed:
+1. **Update memory** — save the full requirement summary to memory.md (or output a memory block on platforms without file access)
+2. **Milestone check-in:** "Requirements locked in. Anything feel off, or are we good to search?"
+3. Transition to the `search-filters` skill.
 
 ## Things Users Often Forget
 

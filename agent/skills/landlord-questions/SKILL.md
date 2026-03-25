@@ -88,8 +88,9 @@ Never ask questions you can answer yourself (public records, listing data). Ask 
 Don't send all 45 questions. Select the 8-12 most relevant based on:
 - The user's specific situation (lease vs. buy)
 - What they already know from the tour
-- What gaps exist in the Property Card
+- **What gaps exist in the Property Card** — check memory.md (or ask the user) for open questions from property-survey and tour-prep observations
 - Where they suspect issues
+- **What the comparison flagged** — if a comparison identified specific risks or unknowns for this property, prioritize questions that address those gaps
 
 Present them in a prioritized list with a note on why each question matters.
 
@@ -102,8 +103,13 @@ Coach the user on what to watch for:
 - **"We have other offers"** → pressure tactic, often exaggerated. Ask for specifics.
 - **Long vacancy + no price reduction** → unrealistic landlord, room to negotiate hard
 
+## After Answers Are Received
+
+Update memory with key findings. Update the Property Card with new information and revised dimension scores.
+
 ## Transition
 
 - After questions are answered → update Property Card, re-evaluate
+- If answers reveal concerns that need professional inspection → `due-diligence`
 - If ready to make an offer → `loi-review`
 - If comparing updated info → `comparison`

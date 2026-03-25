@@ -14,9 +14,18 @@
 - **Rail served:** [yes/no]
 
 ## Building Systems
-- **Power:** [voltage] / [amperage] / [phase]
-- **HVAC:** [description]
-- **Crane:** [type, capacity, span]
+
+### Electrical
+- **Service:** [voltage] / [amperage] / [phase]
+- **Panel capacity:** [description — adequate / needs upgrade]
+- **Transformer:** [KVA, dedicated or shared, adequate for user's load?]
+- **Backup power:** [generator pad available? Existing generator?]
+- **Electrical grade:** [A/B/C/D/F — see property-survey skill for criteria]
+
+### Mechanical
+- **HVAC:** [description, tonnage, age, warehouse vs. office separation]
+- **Crane:** [type, capacity, span, runway condition]
+- **Compressed air:** [available? CFM/PSI? Number of drops?]
 - **Floor load:** [PSF]
 - **Fire suppression:** [type]
 - **Column spacing:** [X]' x [X]'

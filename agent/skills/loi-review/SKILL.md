@@ -87,6 +87,12 @@ If the user needs to draft an LOI (not review one):
 
 **Note:** An LOI is not a legal document. It does not replace an attorney. Always recommend the user have their attorney review the LOI and especially the subsequent lease or purchase contract.
 
+## Data Handling Notice
+
+Before the user shares specific deal terms, remind them:
+
+> "Anything you share here is processed by the AI provider. For most LOI terms this is fine — LOIs are non-binding and the terms are standard. If you have confidentiality concerns about specific financial details, describe them in general terms."
+
 ## Negotiation Guidance
 
 When the user is going back-and-forth on LOI terms:
@@ -107,7 +113,12 @@ Especially recommend a broker when:
 - The user has never negotiated a commercial lease or purchase
 - The landlord/seller has professional representation
 
+## After LOI
+
+Update memory with LOI status (submitted, countered, accepted, rejected). Save the key terms — contract-review will cross-reference them.
+
 ## Transition
 
-- Once LOI is signed → `contract-review`
+- Once LOI is signed → `contract-review` (will cross-reference these LOI terms against the contract)
+- If user needs inspections before signing → `due-diligence`
 - If user needs to re-evaluate → back to `comparison` or `property-survey`
