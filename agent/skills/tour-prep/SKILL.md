@@ -13,13 +13,23 @@ Prepare the user to get maximum value from a property tour.
 - User has selected a shortlist and wants to see them in person
 - User asks "what should I look for?"
 
+## Before Generating the Checklist
+
+Check memory.md (or ask the user) for an existing Property Card for this building. If one exists, pull out:
+- **Open questions** from the property survey — these become priority items to investigate on-site
+- **Gaps in specs** — things the listing didn't specify that you need to verify in person
+- **Red flags** — anything concerning from the initial evaluation
+
+If no Property Card exists, note which specs are unknown and flag them in the observation guide.
+
 ## Pre-Tour Checklist
 
 ### Before You Go
 - [ ] Confirm tour date/time with listing broker or landlord
 - [ ] Get the listing broker's cell phone (in case you can't find the building)
 - [ ] Download or print the property flyer / listing sheet
-- [ ] Review your Property Card for this building (from property-survey)
+- [ ] **Review your Property Card** for this building (from property-survey) — bring the open questions list
+- [ ] **Print or save the comparison matrix** if comparing multiple buildings on the same tour day
 - [ ] Bring a tape measure or laser measurer
 - [ ] Wear closed-toe shoes (warehouse floors, loading docks)
 - [ ] Bring your phone — take photos of EVERYTHING
@@ -84,8 +94,13 @@ Rate the property on your three dimensions (Location / Pricing / Functionality) 
 
 If touring multiple buildings, keep notes fresh — tour fatigue causes you to blend buildings together. Write your top impression of each building within 30 minutes of leaving.
 
+## After the Tour — Memory Update
+
+Update memory with tour observations: what stood out, what concerned you, and your updated dimension scores.
+
 ## Transition
 
-- After tours, if the user has questions → `landlord-questions`
+- After tours, if the user has follow-up questions → `landlord-questions` (focus on issues discovered during the tour)
+- If the user needs inspections before deciding → `due-diligence` (especially if environmental, structural, or roof concerns were noted)
 - If the user is ready to make an offer → `loi-review`
 - If the user needs to re-compare → `comparison`

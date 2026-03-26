@@ -18,6 +18,16 @@ You are NOT a lawyer. Do NOT provide legal advice. Your role is to help the user
 - User mentions "contract," "lease agreement," or "PSA"
 - LOI has been signed and the formal document has arrived
 
+## Data Handling Notice
+
+Before the user shares their contract, remind them:
+
+> "A quick note: anything you share here is processed by the AI provider (Anthropic, OpenAI, etc.) and may be retained per their data policy. For highly sensitive terms, you can describe them in general terms rather than pasting the full text. Most standard lease reviews are fine to share in full."
+
+## Cross-Reference: LOI Terms
+
+If the user has previously drafted or reviewed an LOI through the `loi-review` skill, check memory.md (or ask) for the agreed LOI terms. Use these as your baseline for the "Match to LOI" section below. Flag any term that changed between LOI and contract.
+
 ## How to Review
 
 Ask the user to share the document (paste text, upload PDF, or describe key terms). Then work through the relevant checklist.
@@ -94,6 +104,32 @@ These are common in landlord-drafted leases and almost always negotiable:
 | Co-tenancy clause | Your obligations change if anchor tenant leaves | Understand the implications |
 | Subordination | Your lease is subordinate to landlord's mortgage | Require SNDA (Subordination, Non-Disturbance, Attornment) agreement |
 | Continuous operation | Must operate 24/7 or during set hours | Remove or make reasonable |
+
+### Industrial-Specific Clauses
+
+These are critical for manufacturing, warehouse, and industrial tenants — often missing from landlord-drafted leases:
+
+| Clause | Risk for Industrial Tenants | What to Push For |
+|---|---|---|
+| **CAM base year / reconciliation** | Manufacturing tenants occupy large footprints — a bad base year or uncapped CAM can cost $50K+/yr when the landlord does a roof replacement or parking lot repave | Negotiate a base year stop or hard cap (3-5% annual increase). Get exclusions for capital improvements, landlord's financing costs, and management fees above 5%. |
+| **Roof/structure for heavy-use tenants** | If you're running cranes, heavy equipment, or high-bay racking, the roof and structure take more stress. Landlords may try to pass structural repair costs to you. | Landlord responsible for all structural and roof repairs, including those caused by normal industrial use. You maintain; they replace. |
+| **Environmental liability** | Manufacturing processes (chemicals, solvents, cutting fluids, plating, painting) create environmental risk. Landlords will try to make you liable for all environmental conditions. | Pre-existing conditions are landlord's responsibility. Your liability limited to contamination you cause during your tenancy. Require landlord to provide baseline Phase I before lease commencement. |
+| **Use clause specificity** | A vague "warehouse" use clause can be challenged if you're welding, using hazmat, running outdoor operations, or operating heavy equipment. | Explicitly list every operation: manufacturing, assembly, welding, painting, outdoor storage, truck staging, hazmat storage (with specific materials), testing, R&D. The more specific, the better. |
+| **Utility infrastructure** | Industrial operations often need electrical upgrades (transformer, switchgear, panel upgrades), gas lines, compressed air, or generator pads. Who pays? | If infrastructure exists, landlord maintains. If you need upgrades beyond building standard, define who pays and who owns improvements at lease end. Get written approval for generator pads, transformer installations, and utility connections. |
+| **Noise/vibration/emission restrictions** | Manufacturing generates noise, vibration, and sometimes emissions. Standard commercial leases have quiet enjoyment clauses that may conflict with your operations. | Carve out your specific operations from any noise/nuisance clause. Get explicit acknowledgment that your permitted use includes your actual noise/vibration profile. Check local ordinances for dB limits during business hours vs. night. |
+| **Floor load / slab modifications** | Heavy machinery, racking, and forklifts stress floors. If the slab cracks under your equipment, who pays? | Confirm floor load capacity in writing. If you need to cut or modify the slab (trenches, pits, reinforcement), get explicit permission and define restoration requirements at lease end. |
+| **Crane installation / modifications** | Installing or upgrading an overhead crane is a $100K+ investment that becomes a fixture. | Define who owns crane improvements at lease end. Negotiate right to remove your crane, or credit for leaving it. Get landlord approval for runway and structural modifications in writing. |
+
+### Industrial Red Flags — Beyond Standard Commercial
+
+| Red Flag | Why It Matters | Action |
+|---|---|---|
+| No baseline Phase I ESA | Without a pre-lease environmental baseline, landlord can blame you for pre-existing contamination | Require landlord to provide Phase I before lease signing, or commission your own |
+| Vague restoration clause ("original condition") | Could mean removing your crane, ripping out electrical upgrades, demolishing office buildout — costs $100K+ | Negotiate "broom clean, reasonable wear and tear" or specific exclusions for approved alterations |
+| Insurance limits above market | Industrial insurance is already expensive; excessive limits (e.g., $10M umbrella) add unnecessary cost | Compare requirements to your broker's recommendation; push back if limits exceed your industry standard |
+| No right to install signage on building | Industrial buildings are often hard to find; your customers and vendors need to see your sign | Specify sign type, size, location, and who pays for installation/removal |
+| Landlord controls HVAC schedule | Manufacturing may run 24/7 or unusual shifts; HVAC lockout during off-hours kills productivity | Ensure 24/7 HVAC access or tenant-controlled systems for your space |
+| No sublease right for portion of space | If you grow slower than expected, you're stuck paying for unused space | Negotiate right to sublease up to 50% of space with landlord approval (not to be unreasonably withheld) |
 
 ## Purchase Agreement (PSA) Review Checklist
 

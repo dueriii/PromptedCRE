@@ -75,6 +75,50 @@ Find the right section in `memory.md` and update it in place. Don't append dupli
 
 Memory is for **this user, this deal, this conversation** — not for general knowledge.
 
+## Multi-Deal Support
+
+If the user is running parallel searches (e.g., Houston and Dallas), create separate deal sections:
+
+```markdown
+## Apex Precision — Houston Deal
+...
+
+## Apex Precision — Dallas Deal
+...
+```
+
+When the user starts a new conversation, ask which deal they want to work on if multiple are active.
+
+## Platform Fallback (No File Access)
+
+Some platforms (ChatGPT, Claude.ai web, Gemini web) cannot read or write files. On these platforms, memory still works — it just requires the user's help.
+
+### End of Session (no file access)
+When the conversation is ending and you have important context to save, output a **memory block**:
+
+> **Save this for next time.** Copy the block below and paste it at the start of your next conversation so I remember where we left off.
+>
+> ```
+> PROMPTEDCRE MEMORY BLOCK — [date]
+> Company: [name]
+> Stage: [current stage]
+> Requirements: [1-line summary]
+> Properties: [shortlist with status]
+> Preferences: [any corrections]
+> Next steps: [what to do next]
+> ```
+
+### Start of Session (no file access)
+If the user pastes a memory block, parse it and treat it as if you read memory.md. Confirm: "Got it — I remember where we left off. [1-sentence summary]."
+
+If no memory block is provided and no memory.md is available, start fresh and note: "I don't have context from previous conversations. Want to catch me up, or start fresh?"
+
+## Setup
+
+`memory.md` is gitignored to protect deal data. To set up:
+1. Copy `memory.template.md` to `memory.md`
+2. `memory.md` is yours — it will not be tracked by git
+
 ## After Writing
 
 Confirm with a brief note in your response: "I've updated our notes." Don't make a big deal of it. Just do it and move on.

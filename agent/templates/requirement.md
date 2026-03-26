@@ -15,12 +15,22 @@
 - **Parking:** [X] spaces or [X]:1,000 SF ratio
 
 ## Building Systems
-- **Power:** [voltage] / [amperage] / [phase]
-- **HVAC:** [requirements]
-- **Crane:** [yes/no, type, capacity]
-- **Floor load:** [PSF requirement]
-- **Fire suppression:** [type required]
-- **Other utilities:** [compressed air, gas, etc.]
+
+### Power
+- **Voltage / Phase:** [480V 3-phase / 208V / etc.]
+- **Amperage (total connected load):** [X]A
+- **Panel capacity:** [single main / multiple sub-panels / specific requirements]
+- **Transformer:** [standard building service adequate / need dedicated transformer / KVA requirement]
+- **Backup power:** [generator required? UPS? Critical loads?]
+- **Future growth:** [expected power increase in 2-3 years?]
+
+### Other Systems
+- **HVAC:** [requirements — temperature/humidity tolerances, warehouse climate control?]
+- **Crane:** [yes/no, bridge/jib, capacity (tons), span]
+- **Floor load:** [PSF requirement, slab thickness]
+- **Fire suppression:** [type required — ESFR, wet/dry, clean agent?]
+- **Compressed air:** [CFM and PSI requirements]
+- **Other utilities:** [natural gas, process gas, dust collection, fume extraction, etc.]
 
 ## Location
 - **Target market:** [city / submarket]
