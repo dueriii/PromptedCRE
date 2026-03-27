@@ -7,10 +7,18 @@ import {
   HelpCircle,
   Target,
   FileText,
-  BookOpen
+  BookOpen,
+  Brain,
+  Search,
+  Clock
 } from "lucide-react"
 
 const features = [
+  {
+    icon: Brain,
+    title: "Memory",
+    description: "Persists deal context across sessions — requirements, preferences, and milestones. Works on any platform.",
+  },
   {
     icon: BookOpen,
     title: "Using PromptedCRE",
@@ -34,7 +42,7 @@ const features = [
   {
     icon: Scale,
     title: "Comparison",
-    description: "Lease vs. buy. Building A vs. Building B. Side-by-side analysis with the comparison matrix template.",
+    description: "Weighted scoring across Location, Pricing, and Functionality. Lease vs. buy. Deep cost analysis mode for single deals.",
   },
   {
     icon: Calendar,
@@ -47,6 +55,16 @@ const features = [
     description: "45+ strategic questions that surface hidden problems and create negotiation leverage.",
   },
   {
+    icon: Search,
+    title: "Due Diligence",
+    description: "Phase I ESA, title search, inspections, and DD planning — know what to check before you close.",
+  },
+  {
+    icon: Clock,
+    title: "Deal Timeline",
+    description: "Milestone schedule for your deal — what's next, what's due, and what's at risk.",
+  },
+  {
     icon: Target,
     title: "LOI Review",
     description: "Letter of Intent drafting, negotiation strategy, and deal terms — built for operators, not lawyers.",
@@ -54,7 +72,7 @@ const features = [
   {
     icon: FileText,
     title: "Contract Review",
-    description: "Lease and purchase agreement analysis. Understand what you're signing before you sign it.",
+    description: "Industrial lease and purchase analysis — 8 key clauses and 6 red flags your attorney needs to see.",
   },
 ]
 
@@ -67,11 +85,11 @@ export function RepoFeatures() {
             Everything you need. Nothing you don&apos;t.
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Nine skills. Three templates. The entire industrial real estate process from first search to signed deal.
+            Twelve skills. Five templates. The entire industrial real estate process from first search to signed deal.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {features.map((feature, index) => (
             <div
               key={index}
