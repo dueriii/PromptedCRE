@@ -8,8 +8,8 @@ const repoSnippet = `# PromptedCRE — Industrial Real Estate Agent
 
 ## Get Started
 \`\`\`bash
-git clone https://github.com/dueriii/promptedcre-cli.git
-cd promptedcre-cli
+git clone https://github.com/dueriii/PromptedCRE.git
+cd PromptedCRE/agent
 \`\`\`
 
 Then open the folder in your AI tool of choice:
@@ -18,28 +18,34 @@ Then open the folder in your AI tool of choice:
   Codex CLI    →  codex         # auto-detects AGENTS.md
   Gemini CLI   →  gemini        # auto-detects GEMINI.md
 
-## Skills
+## 12 Skills
 
+  memory             # Persist deal context across sessions
   intake             # Define space & operational requirements
   search-filters     # Build CoStar / LoopNet / Crexi search params
   property-survey    # Evaluate properties against your criteria
-  comparison         # Side-by-side lease vs. purchase analysis
+  comparison         # Weighted scoring + deep cost analysis
   tour-prep          # Pre-visit checklist and walk agenda
   landlord-questions # 45+ questions that surface problems and leverage
+  due-diligence      # Phase I ESA, title search, inspections
+  deal-timeline      # Milestone schedule and deadlines
   loi-review         # Letter of Intent drafting and negotiation
-  contract-review    # Lease and purchase agreement analysis
+  contract-review    # Industrial lease review — 8 clauses + 6 red flags
+  using-promptedcre  # System orientation and guides
 
 ## Recommended flow
 
 1. intake → define what you need
 2. search-filters → build your search
 3. property-survey → evaluate your shortlist
-4. comparison → side-by-side analysis
+4. comparison → weighted side-by-side analysis
 5. tour-prep → prep for site visits
-6. landlord-questions + loi-review → negotiate with leverage
-7. contract-review → finalize the deal
+6. landlord-questions + due-diligence → investigate thoroughly
+7. deal-timeline → map your milestones
+8. loi-review → negotiate with leverage
+9. contract-review → finalize the deal
 
-GitHub: https://github.com/dueriii/promptedcre-cli`
+GitHub: https://github.com/dueriii/PromptedCRE`
 
 export function UnlockRepo() {
   const [copied, setCopied] = useState(false)
@@ -105,7 +111,7 @@ export function UnlockRepo() {
           
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="h-12 px-8 text-base font-medium" asChild>
-              <a href="https://github.com/dueriii/promptedcre-cli" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/dueriii/PromptedCRE" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2 size-4" />
                 View on GitHub
               </a>

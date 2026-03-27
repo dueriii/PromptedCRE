@@ -13,8 +13,8 @@ Built for founders, operators, and teams at companies that build things — defe
 ## Quick Start
 
 ```bash
-git clone https://github.com/dueriii/promptedcre-cli.git
-cd promptedcre-cli
+git clone https://github.com/dueriii/PromptedCRE.git
+cd PromptedCRE/agent
 ```
 
 Then open the folder in your AI tool and say:
@@ -37,18 +37,22 @@ The agent takes it from there.
 
 ## What It Does
 
-PromptedCRE has 9 skills that activate based on where you are in the process:
+PromptedCRE has 12 skills that activate based on where you are in the process:
 
 | # | Skill | What It Does |
 |---|---|---|
-| 1 | **Intake** | Captures your space needs, building requirements, and deal parameters |
-| 2 | **Search Filters** | Translates requirements into CoStar / LoopNet / Crexi search params |
-| 3 | **Property Survey** | Evaluates each building against your criteria (Location · Pricing · Functionality) |
-| 4 | **Comparison** | Side-by-side analysis — lease vs. buy, Building A vs. Building B |
-| 5 | **Tour Prep** | Pre-tour checklists, observation guides, and photos to take |
-| 6 | **Landlord Questions** | 45+ strategic questions that surface hidden problems and build leverage |
-| 7 | **LOI Review** | Draft, review, or negotiate Letters of Intent |
-| 8 | **Contract Review** | Review lease agreements and purchase contracts — flag risks for your attorney |
+| 1 | **Memory** | Persists deal context across sessions — requirements, preferences, milestones |
+| 2 | **Using PromptedCRE** | Orients new users to the system and available workflows |
+| 3 | **Intake** | Captures your space needs, building requirements, and deal parameters |
+| 4 | **Search Filters** | Translates requirements into CoStar / LoopNet / Crexi search params |
+| 5 | **Property Survey** | Evaluates each building against your criteria (Location · Pricing · Functionality) |
+| 6 | **Comparison** | Side-by-side weighted scoring — lease vs. buy, Building A vs. Building B |
+| 7 | **Tour Prep** | Pre-tour checklists, observation guides, and photos to take |
+| 8 | **Landlord Questions** | 45+ strategic questions that surface hidden problems and build leverage |
+| 9 | **Due Diligence** | Phase I ESA, title search, inspections, and DD planning |
+| 10 | **Deal Timeline** | Milestone schedule — what's next, what's due, what's at risk |
+| 11 | **LOI Review** | Draft, review, or negotiate Letters of Intent |
+| 12 | **Contract Review** | Industrial lease/purchase review — 8 key clauses + 6 red flags |
 
 Skills activate automatically. You don't need to memorize commands or follow a rigid sequence. Just describe what you need and the agent picks the right workflow.
 
@@ -63,23 +67,27 @@ Every building is scored across three dimensions:
 ## Repo Structure
 
 ```
-promptedcre/
+agent/
 ├── CLAUDE.md              # Agent instructions (Claude Code)
 ├── AGENTS.md              # Agent instructions (Codex, Cursor, cross-platform)
 ├── GEMINI.md              # Agent instructions (Gemini CLI)
 ├── .cursor/rules/         # Cursor-native rules
 ├── skills/
+│   ├── memory/            # Cross-session deal persistence
 │   ├── using-promptedcre/ # Orientation skill
 │   ├── intake/            # Requirement gathering
 │   ├── search-filters/    # Market search parameters
 │   ├── property-survey/   # Building evaluation
-│   ├── comparison/        # Side-by-side analysis
+│   ├── comparison/        # Weighted scoring + deep cost analysis
 │   ├── tour-prep/         # Tour checklists
 │   ├── landlord-questions/# Strategic questions
+│   ├── due-diligence/     # Inspections & DD planning
+│   ├── deal-timeline/     # Milestone scheduling
 │   ├── loi-review/        # Letter of Intent
-│   └── contract-review/   # Lease & purchase contracts
+│   └── contract-review/   # Lease & purchase contracts (industrial depth)
 ├── templates/             # Output templates
 ├── examples/              # Sample outputs
+├── memory.template.md     # Memory template (copy to memory.md)
 └── README.md
 ```
 
