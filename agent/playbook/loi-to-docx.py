@@ -129,13 +129,17 @@ def parse_loi_markdown(md_text: str) -> dict:
     return loi
 
 
-def build_docx(loi: dict, output_path: str):
+def build_docx(loi: dict, output_path: str, logo_path: str = None):
     """Generate a formatted .docx LOI from parsed data."""
     doc = Document()
 
+    # --- Brand colors ---
+    PROTECH_GREEN = RGBColor(0x3D, 0xE0, 0x2B)  # #3DE02B
+    PROTECH_BLACK = RGBColor(0x1A, 0x1A, 0x1A)
+
     # --- Page setup ---
     for section in doc.sections:
-        section.top_margin = Inches(1)
+        section.top_margin = Inches(0.75)
         section.bottom_margin = Inches(1)
         section.left_margin = Inches(1)
         section.right_margin = Inches(1)
@@ -143,11 +147,28 @@ def build_docx(loi: dict, output_path: str):
     # --- Default font ---
     style = doc.styles["Normal"]
     font = style.font
-    font.name = "Times New Roman"
+    font.name = "Calibri"
     font.size = Pt(11)
-    font.color.rgb = RGBColor(0, 0, 0)
+    font.color.rgb = PROTECH_BLACK
 
     # === COVER LETTER PAGE ===
+
+    # Logo header
+    if logo_path and Path(logo_path).exists():
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        run = p.add_run()
+        run.add_picture(logo_path, width=Inches(2.5))
+        p.space_after = Pt(4)
+
+    # Green accent line
+    p = doc.add_paragraph()
+    p.space_before = Pt(0)
+    p.space_after = Pt(12)
+    # Use a thin green border via a run of underscores styled green
+    run = p.add_run("_" * 85)
+    run.font.color.rgb = PROTECH_GREEN
+    run.font.size = Pt(6)
 
     # Date
     if loi["date"]:
@@ -260,11 +281,20 @@ def build_docx(loi: dict, output_path: str):
     # === EXHIBIT A PAGE ===
     doc.add_page_break()
 
+    # Logo on exhibit page too
+    if logo_path and Path(logo_path).exists():
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        run = p.add_run()
+        run.add_picture(logo_path, width=Inches(2))
+        p.space_after = Pt(4)
+
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     run = p.add_run("EXHIBIT 'A'")
     run.bold = True
     run.font.size = Pt(14)
+    run.font.color.rgb = PROTECH_BLACK
     p.space_after = Pt(6)
 
     p = doc.add_paragraph()
@@ -272,6 +302,7 @@ def build_docx(loi: dict, output_path: str):
     run = p.add_run("Terms and Conditions")
     run.bold = True
     run.font.size = Pt(12)
+    run.font.color.rgb = PROTECH_GREEN
     p.space_after = Pt(12)
 
     # Terms table
@@ -279,6 +310,22 @@ def build_docx(loi: dict, output_path: str):
         table = doc.add_table(rows=len(loi["terms"]), cols=2)
         table.style = "Table Grid"
         table.alignment = WD_TABLE_ALIGNMENT.CENTER
+
+        # Set green borders on table via XML
+        from docx.oxml.ns import qn
+        tbl_pr = table._tbl.tblPr
+        borders = tbl_pr.find(qn("w:tblBorders"))
+        if borders is None:
+            from lxml import etree
+            borders = etree.SubElement(tbl_pr, qn("w:tblBorders"))
+        for edge in ("top", "left", "bottom", "right", "insideH", "insideV"):
+            el = borders.find(qn(f"w:{edge}"))
+            if el is None:
+                from lxml import etree
+                el = etree.SubElement(borders, qn(f"w:{edge}"))
+            el.set(qn("w:val"), "single")
+            el.set(qn("w:sz"), "4")
+            el.set(qn("w:color"), "3DE02B")
 
         for row in table.rows:
             row.cells[0].width = Inches(2)
@@ -291,15 +338,16 @@ def build_docx(loi: dict, output_path: str):
             p = cell_label.paragraphs[0]
             run = p.add_run(f"{label}:")
             run.bold = True
-            run.font.name = "Times New Roman"
+            run.font.name = "Calibri"
             run.font.size = Pt(10)
+            run.font.color.rgb = PROTECH_BLACK
 
             # Value cell
             cell_value = table.rows[idx].cells[1]
             cell_value.text = ""
             p = cell_value.paragraphs[0]
             run = p.add_run(value)
-            run.font.name = "Times New Roman"
+            run.font.name = "Calibri"
             run.font.size = Pt(10)
 
     # Save
@@ -321,9 +369,25 @@ def main():
     md_text = md_path.read_text()
     loi = parse_loi_markdown(md_text)
 
+    # Auto-detect logo: walk up from md file to find logo.png in deal folder
+    logo_path = None
+    search_dir = md_path.parent
+    for _ in range(5):
+        candidate = search_dir / "logo.png"
+        if candidate.exists():
+            logo_path = str(candidate)
+            break
+        search_dir = search_dir.parent
+
+    # Allow explicit --logo flag
+    if len(sys.argv) >= 3 and sys.argv[2].startswith("--logo="):
+        logo_path = sys.argv[2].split("=", 1)[1]
+
     output_path = md_path.with_suffix(".docx")
-    build_docx(loi, str(output_path))
+    build_docx(loi, str(output_path), logo_path=logo_path)
     print(f"Created: {output_path}")
+    if logo_path:
+        print(f"Branded with logo: {logo_path}")
 
 
 if __name__ == "__main__":
