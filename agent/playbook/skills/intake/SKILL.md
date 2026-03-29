@@ -81,7 +81,7 @@ Then fill in gaps with targeted follow-ups. Group related questions naturally.
 
 ## When Complete
 
-Present a **Requirement Summary** using the template in `templates/requirement.md`. Ask the user to confirm or correct it.
+Present a **Requirement Summary** using the template in `reference/templates/requirement.md`. Ask the user to confirm or correct it.
 
 Once confirmed:
 1. **Update memory** — save the full requirement summary to memory.md (or output a memory block on platforms without file access)

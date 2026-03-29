@@ -70,7 +70,7 @@ Find the right section in `memory.md` and update it in place. Don't append dupli
 ## What NOT to Write
 
 - Generic knowledge (industrial real estate facts, market data)
-- Skill workflows — those live in `skills/`
+- Skill workflows — those live in `playbook/skills/`
 - Anything that belongs in templates
 
 Memory is for **this user, this deal, this conversation** — not for general knowledge.

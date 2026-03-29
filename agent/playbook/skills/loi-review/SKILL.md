@@ -113,6 +113,23 @@ Especially recommend a broker when:
 - The user has never negotiated a commercial lease or purchase
 - The landlord/seller has professional representation
 
+## Exporting to Word
+
+After drafting the LOI in markdown, offer to convert it to a .docx the user can send:
+
+> "Want me to export this as a Word document? I'll format it as a professional RFP with a cover letter and Exhibit A terms table."
+
+If yes, run:
+```
+python3 playbook/loi-to-docx.py working-deals/[company]/properties/[address-slug]/loi/loi-draft.md
+```
+
+This produces a `.docx` next to the markdown file with:
+- **Page 1:** Cover letter (date, recipient, RE line, non-binding disclaimer, signature block)
+- **Page 2:** Exhibit A terms table (two-column, Table Grid, Times New Roman)
+
+The user can then add their company logo and letterhead in Word before sending.
+
 ## After LOI
 
 Update memory with LOI status (submitted, countered, accepted, rejected). Save the key terms — contract-review will cross-reference them.

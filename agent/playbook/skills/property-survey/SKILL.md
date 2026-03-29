@@ -19,7 +19,7 @@ Do NOT evaluate properties without a confirmed requirement summary from intake. 
 
 ## How to Gather Property Data
 
-**Check the properties folder first.** Look in `deals/[company]/properties/` for any files the user has dropped there — PDFs, screenshots, exports from CoStar/LoopNet/Crexi. Read everything in that folder and evaluate each property you find. Tell the user what you found: "I see [X] listings in your properties folder. Let me evaluate each one."
+**Check the properties folder first.** Look in `working-deals/[company]/properties/` for property folders. Inside each property folder, check the `flyers/` subfolder for PDFs, screenshots, and exports from CoStar/LoopNet/Crexi. Read everything and evaluate each property you find. Tell the user what you found: "I see [X] listings in your properties folder. Let me evaluate each one."
 
 The user may also provide data directly in conversation:
 - **Listing flyer / PDF** — extract specs from the document
@@ -106,7 +106,7 @@ Score every property across three dimensions:
 
 ## Output
 
-For each property, generate a **Property Card** using the template in `templates/property-card.md`.
+For each property, generate a **Property Card** using the template in `reference/templates/property-card.md`.
 
 Include:
 - Summary of specs

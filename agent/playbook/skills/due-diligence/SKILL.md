@@ -102,7 +102,7 @@ Due diligence is the safety net between "we like this building" and "we're commi
 
 ## DD Timeline Template
 
-Use `templates/due-diligence-checklist.md` to generate a timeline for the user.
+Use `reference/templates/due-diligence-checklist.md` to generate a timeline for the user.
 
 Order items based on:
 1. **Long lead-time first** — Phase I ESA and ALTA survey take the longest

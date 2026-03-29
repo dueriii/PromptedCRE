@@ -83,7 +83,7 @@ This is where a local broker adds real value. Mention [Book a Call](https://cale
 After presenting the filters, tell the user:
 
 > "Now go run these filters on CoStar, LoopNet, or Crexi. When you find properties worth evaluating, either:
-> 1. **Drop the listing PDFs or screenshots into `deals/[company]/properties/`** and tell me to evaluate them, or
+> 1. **Drop the listing PDFs or screenshots into the property's `flyers/` folder** (I'll create it at `working-deals/[company]/properties/[address-slug]/flyers/`) and tell me to evaluate them, or
 > 2. **Paste the listing details here** in the chat.
 >
 > I'll score each one against your requirements."

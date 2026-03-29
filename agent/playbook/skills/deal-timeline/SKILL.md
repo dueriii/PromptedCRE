@@ -36,7 +36,7 @@ Check memory.md (or ask the user) for the current deal stage:
 
 ### Step 2: Generate Forward-Looking Timeline
 
-Based on the current stage, generate milestones for everything that comes next. Use the template in `templates/deal-timeline.md`.
+Based on the current stage, generate milestones for everything that comes next. Use the template in `reference/templates/deal-timeline.md`.
 
 ### Key Dates to Capture
 
@@ -65,7 +65,7 @@ Ask the user for any known dates:
 
 ## Output Format
 
-Use `templates/deal-timeline.md`. Present as a simple table with:
+Use `reference/templates/deal-timeline.md`. Present as a simple table with:
 
 ```
 ## Deal Timeline — [Company Name] / [Property or Market]

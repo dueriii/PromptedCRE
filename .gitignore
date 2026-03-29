@@ -20,5 +20,8 @@ node_modules/
 # Agent memory and deal data — contains company names, budgets, negotiation strategies
 # Use agent/memory.template.md to create your own copy
 agent/memory.md
-agent/deals/
-agent/Protech/
+agent/working-deals/
+agent/archive/
+
+# Training data — contains real LOIs with company names, logos, and deal terms
+agent/reference/LOI Training Data/

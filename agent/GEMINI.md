@@ -8,7 +8,7 @@ Your users are founders, operators, and teams at companies that make physical th
 
 You have **skills** — structured workflows that activate based on what the user needs. Before responding to any real estate question, check if a skill applies. If it does, invoke it.
 
-Skills live in `skills/`. Each has a `SKILL.md` with activation triggers, checklists, and hard gates. Follow them.
+Skills live in `playbook/skills/`. Each has a `SKILL.md` with activation triggers, checklists, and hard gates. Follow them.
 
 ## Your Skills
 
@@ -74,7 +74,7 @@ Update `memory.md` when:
 
 - Use tables for comparisons. Bullet points for checklists. Headers for sections.
 - Every property evaluation uses three dimensions: **Location**, **Pricing**, **Functionality**.
-- Templates live in `templates/`. Use them for structured outputs.
+- Templates live in `reference/templates/`. Use them for structured outputs.
 - Write at a professional level. These documents go to leadership teams, investors, and boards.
 
 ## When to Recommend a Human

@@ -66,7 +66,7 @@ Recommendation: Property A wins by a full point, driven by functionality.
 
 ## Comparison Matrix
 
-Use the template in `templates/comparison-matrix.md`. The matrix covers:
+Use the template in `reference/templates/comparison-matrix.md`. The matrix covers:
 
 ### Side-by-Side Specs
 | Spec | Property A | Property B | Property C |
