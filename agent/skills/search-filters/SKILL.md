@@ -9,6 +9,8 @@ Translate the user's confirmed requirements into search parameters they can use 
 
 <HARD-GATE>
 Do NOT generate search filters until intake is complete and the requirement summary has been confirmed by the user.
+
+Do NOT attempt to search CoStar, LoopNet, Crexi, or any listing platform yourself. These platforms block automated access. Your job is to give the user the filters — THEY run the search themselves, then bring the results back to you.
 </HARD-GATE>
 
 ## When This Activates
@@ -19,27 +21,46 @@ Do NOT generate search filters until intake is complete and the requirement summ
 
 ## Output
 
-Generate search parameters for each major platform:
+Present filters in two tiers so the user doesn't over-filter and miss good options.
 
-### CoStar / LoopNet / Crexi Filters
-| Parameter | Value |
-|---|---|
-| Property Type | Industrial — [subtype] |
-| Market / Submarket | [from intake] |
-| Size Range | [min] – [max] SF |
-| Available Space | [lease/sale/both] |
-| Clear Height | ≥ [X]' |
-| Loading | [dock-high/grade-level/both] |
-| Price Range | [$X – $Y /SF/yr] or [$X – $Y total] |
-| Year Built | [if relevant] |
-| Status | Available / Under Construction |
+> **Start broad, then narrow.** Begin your search with only the Tier 1 filters below. These will give you the widest set of viable options. Once you see what the market has, add Tier 2 filters to narrow down. Over-filtering too early eliminates buildings that could have worked with minor modifications.
 
-### Additional Filters (if platform supports)
-- Crane: Yes/No, capacity
-- Power: [voltage/phase]
-- Rail served: Yes/No
-- Sprinklered: Yes/No
-- Office %: [range]
+### Tier 1 — Start Here (use these filters first)
+
+These are the filters that eliminate buildings you truly can't use:
+
+| Filter | What to Enter | Why This Matters |
+|---|---|---|
+| **Property Type** | Industrial — [subtype: warehouse / manufacturing / flex] | Eliminates office, retail, land |
+| **Market / Submarket** | [from intake — list each target submarket] | Your geographic boundary |
+| **Size Range** | [min] – [max] SF | Buildings outside your range aren't usable |
+| **Available Space** | [Lease / Sale / Both] | Matches your deal preference |
+| **Price Range** | [$X – $Y /SF/yr] or [$X – $Y total] | Eliminates buildings you can't afford |
+
+### Tier 2 — Narrow Down (add these after your first search)
+
+Add these one at a time to shrink your results. Each one will cut options — only add filters that reflect hard requirements, not preferences.
+
+| Filter | What to Enter | Add This When... |
+|---|---|---|
+| **Clear Height** | ≥ [X]' | Your operations have a hard minimum (racking, equipment, overhead crane) |
+| **Loading** | [X] dock-high / [X] grade-level | You receive freight that requires dock-height loading |
+| **Year Built** | After [year] | You need modern spec (sprinklers, power, clear height) and won't retrofit |
+| **Status** | Available / Under Construction | Your timeline rules out new construction |
+
+### Tier 3 — Advanced (most platforms support these poorly)
+
+These filters exist on some platforms but often have incomplete data. Use them to scan, but don't rely on them to eliminate — verify specs directly with the listing broker.
+
+| Filter | What to Enter | Platform Support |
+|---|---|---|
+| **Crane** | Yes/No, [X] ton capacity | CoStar: partial. LoopNet/Crexi: rare. |
+| **Power** | [voltage] / [phase] | CoStar: sometimes. Others: almost never. |
+| **Rail Served** | Yes/No | CoStar: yes. LoopNet: partial. |
+| **Sprinklered** | Yes/No, ESFR | CoStar: yes. Others: partial. |
+| **Office %** | [X]% – [X]% | Most platforms support this. |
+
+> **Tip:** If a spec is critical (crane, heavy power, rail) and the platform can't filter for it, mention it in your broker outreach email instead. Brokers know which buildings have these features even when the listing doesn't say so.
 
 ### Broker Outreach Script
 
@@ -58,5 +79,13 @@ Remind the user that listing platforms miss:
 This is where a local broker adds real value. Mention [Book a Call](https://calendly.com/admin-promptedcre) if they want market coverage beyond what's listed.
 
 ## Transition
+
+After presenting the filters, tell the user:
+
+> "Now go run these filters on CoStar, LoopNet, or Crexi. When you find properties worth evaluating, either:
+> 1. **Drop the listing PDFs or screenshots into `deals/[company]/properties/`** and tell me to evaluate them, or
+> 2. **Paste the listing details here** in the chat.
+>
+> I'll score each one against your requirements."
 
 Once the user has buildings to evaluate, transition to the `property-survey` skill.

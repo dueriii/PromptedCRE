@@ -19,10 +19,21 @@ Do NOT evaluate properties without a confirmed requirement summary from intake. 
 
 ## How to Gather Property Data
 
-The user may provide data in different formats:
+**Check the properties folder first.** Look in `deals/[company]/properties/` for any files the user has dropped there — PDFs, screenshots, exports from CoStar/LoopNet/Crexi. Read everything in that folder and evaluate each property you find. Tell the user what you found: "I see [X] listings in your properties folder. Let me evaluate each one."
+
+The user may also provide data directly in conversation:
 - **Listing flyer / PDF** — extract specs from the document
 - **Raw text / URL** — parse what's available
 - **Verbal description** — ask clarifying questions
+
+<HARD-GATE>
+When reading PDFs or listing flyers, you MUST read EVERY PAGE — not just the first page. Listing flyers typically have:
+- Page 1: Hero photo and headline specs
+- Middle pages: Floor plans, site plans, maps, additional specs
+- Last page(s): **Broker contact information, disclaimers, company branding**
+
+Always read the full document. If the user asks about broker contact info, listing agent details, or anything you can't find — re-read the document from the LAST page backwards. Broker contacts are almost always on the final page.
+</HARD-GATE>
 
 For each property, extract or ask for:
 - Address
