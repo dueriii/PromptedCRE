@@ -57,66 +57,66 @@ Never ask questions you can answer yourself (public records, listing data). Ask 
 26. Are there any co-tenancy requirements or restrictions from other tenants in the park?
 
 ### Building Condition & History
-14. When was the roof last replaced? Is there an active warranty?
-15. What's the age and condition of the HVAC systems?
-16. Have there been any insurance claims on the property in the last 5 years?
-17. Is there any deferred maintenance we should know about?
-18. Has the property ever had water intrusion, flooding, or mold issues?
-19. When was the electrical system last upgraded?
-20. Are there any known foundation or structural issues?
+27. When was the roof last replaced? Is there an active warranty?
+28. What's the age and condition of the HVAC systems?
+29. Have there been any insurance claims on the property in the last 5 years?
+30. Is there any deferred maintenance we should know about?
+31. Has the property ever had water intrusion, flooding, or mold issues?
+32. When was the electrical system last upgraded?
+33. Are there any known foundation or structural issues?
 
 ### Environmental
-21. Has a Phase I Environmental Site Assessment been completed? When?
-22. Were any Recognized Environmental Conditions (RECs) identified?
-23. Has a Phase II ever been triggered? Results?
-24. Any underground storage tanks (active or decommissioned)?
-25. What were the previous uses of the property?
-26. Is the property in a flood plain? FEMA zone?
+34. Has a Phase I Environmental Site Assessment been completed? When?
+35. Were any Recognized Environmental Conditions (RECs) identified?
+36. Has a Phase II ever been triggered? Results?
+37. Any underground storage tanks (active or decommissioned)?
+38. What were the previous uses of the property?
+39. Is the property in a flood plain? FEMA zone?
 
 ### Lease / Financial (for leasing)
-27. What are the actual NNN expenses? Get the last 12 months of CAM reconciliation.
-28. What's the property tax bill? Any pending reassessment?
-29. What's the insurance cost? Has it increased recently?
-30. Is the landlord willing to provide a TI allowance? How much?
-31. What's the landlord's standard lease form? Can we see it before submitting an LOI?
-32. Are there any existing tenants? What are their lease terms?
-33. Who manages the property? On-site or remote?
-34. What capital improvements has the landlord made in the last 3 years?
+40. What are the actual NNN expenses? Get the last 12 months of CAM reconciliation.
+41. What's the property tax bill? Any pending reassessment?
+42. What's the insurance cost? Has it increased recently?
+43. Is the landlord willing to provide a TI allowance? How much?
+44. What's the landlord's standard lease form? Can we see it before submitting an LOI?
+45. Are there any existing tenants? What are their lease terms?
+46. Who manages the property? On-site or remote?
+47. What capital improvements has the landlord made in the last 3 years?
 
 ### Sale / Acquisition (for purchasing)
-35. Why is the owner selling?
-36. How long has the property been on the market?
-37. Have there been any prior offers? Why didn't they close?
-38. What's the current NOI? Can we get a trailing-12 P&L?
-39. Are there any existing leases or tenants that convey with the sale?
-40. What's the property tax assessed value vs. asking price?
-41. Any pending or threatened litigation involving the property?
-42. Are there any easements, encumbrances, or title issues?
+48. Why is the owner selling?
+49. How long has the property been on the market?
+50. Have there been any prior offers? Why didn't they close?
+51. What's the current NOI? Can we get a trailing-12 P&L?
+52. Are there any existing leases or tenants that convey with the sale?
+53. What's the property tax assessed value vs. asking price?
+54. Any pending or threatened litigation involving the property?
+55. Are there any easements, encumbrances, or title issues?
 
 ### Zoning & Use
-43. Current zoning? Any variance or special use permits?
-44. Any restrictions on hours of operation, noise, or truck traffic?
-45. Are there any deed restrictions or HOA/property association rules?
-46. Can we confirm permitted uses with the municipality?
-47. Any upcoming zoning changes or municipal projects that could affect the property?
+56. Current zoning? Any variance or special use permits?
+57. Any restrictions on hours of operation, noise, or truck traffic?
+58. Are there any deed restrictions or HOA/property association rules?
+59. Can we confirm permitted uses with the municipality?
+60. Any upcoming zoning changes or municipal projects that could affect the property?
 
 ### Market & Motivation (leverage-building)
-48. How long has this space been vacant?
-49. What's the landlord's occupancy rate across their portfolio?
-50. Are there other offers currently being considered?
-51. What's the landlord's ideal timeline for execution?
-52. Is the landlord open to creative structures (free rent, stepped rent, early termination options)?
-53. Has the asking rate been adjusted since listing? How many times?
+61. How long has this space been vacant?
+62. What's the landlord's occupancy rate across their portfolio?
+63. Are there other offers currently being considered?
+64. What's the landlord's ideal timeline for execution?
+65. Is the landlord open to creative structures (free rent, stepped rent, early termination options)?
+66. Has the asking rate been adjusted since listing? How many times?
 
 ### Expansion & Future
-54. Is there adjacent space available for future expansion?
-55. Does the landlord own adjacent land? Could they build additional space?
-56. Are there any planned developments nearby that could affect the property?
-57. What are the landlord's long-term plans for the property/portfolio?
+67. Is there adjacent space available for future expansion?
+68. Does the landlord own adjacent land? Could they build additional space?
+69. Are there any planned developments nearby that could affect the property?
+70. What are the landlord's long-term plans for the property/portfolio?
 
 ## How to Use These
 
-Don't send all questions. Select 8–12 and **sequence them by priority tier**:
+Don't send all 70 questions. Select 8–12 and **sequence them by priority tier**:
 
 ### Tier 1 — Dealbreakers (ask these first)
 Questions where a bad answer means the building doesn't work, regardless of price. If any Tier 1 answer is a no-go, stop — don't waste time on Tier 2 and 3.
