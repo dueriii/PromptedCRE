@@ -1,0 +1,54 @@
+{
+  "intake": {
+    "title": "Requirement Summary",
+    "subtitle": "Apex Robotics — Houston Metro",
+    "fields": [
+      { "label": "Company", "value": "Apex Robotics (precision robotic welding systems)" },
+      { "label": "Employees", "value": "38, growing to 55 by Q3 2027" },
+      { "label": "Space", "value": "15,000 - 22,000 SF" },
+      { "label": "Clear Height", "value": "24' minimum (28' preferred for gantry systems)" },
+      { "label": "Power", "value": "480V 3-phase, 1200A minimum. Welding systems draw 800A+ under load." },
+      { "label": "Loading", "value": "2 dock-high, 1 grade-level drive-in (12' x 14' for equipment)" },
+      { "label": "Market", "value": "Houston NW / Tomball / Cypress corridor" },
+      { "label": "Budget", "value": "$9 - $12/SF NNN" },
+      { "label": "Timeline", "value": "Q1 2027 occupancy" }
+    ],
+    "dealbreakers": [
+      "480V 3-phase 1200A — eliminates most spec buildings under 20K SF",
+      "24' clear height — rules out older tilt-wall inventory in NW Houston",
+      "Zoning must allow welding and robotic assembly — some parks restrict"
+    ]
+  },
+  "comparison": {
+    "title": "Property Comparison",
+    "subtitle": "Weighted analysis — 2 properties, 7-year term",
+    "properties": ["8420 Fallbrook Dr", "14901 Hempstead Hwy"],
+    "rows": [
+      { "spec": "Size (SF)", "a": "18,200", "b": "21,400" },
+      { "spec": "Clear Height", "a": "28'", "b": "24'" },
+      { "spec": "Power", "a": "480V/1600A", "b": "480V/1200A" },
+      { "spec": "Loading", "a": "3 dock + 1 GL", "b": "2 dock + 2 GL" },
+      { "spec": "Asking Rate", "a": "$11.50/SF NNN", "b": "$9.25/SF NNN" },
+      { "spec": "NNN Estimate", "a": "$3.85/SF", "b": "$4.10/SF" }
+    ],
+    "scores": {
+      "headers": ["Dimension", "Weight", "Fallbrook", "Hempstead"],
+      "rows": [
+        ["Functionality", "50%", "8.5", "6.0"],
+        ["Location", "25%", "7.0", "7.5"],
+        ["Pricing", "25%", "6.0", "8.5"]
+      ],
+      "totals": ["Weighted Total", "", "7.5", "7.0"]
+    },
+    "recommendation": "Fallbrook wins on functionality (28' clear, 1600A power, crane-ready bay) despite the price premium. The 4' of additional clear height alone justifies the $2.25/SF difference for gantry welding systems."
+  },
+  "loi": {
+    "title": "LOI Review",
+    "subtitle": "8420 Fallbrook Dr — flagged issues",
+    "flags": [
+      { "severity": "red", "clause": "Permitted Use (Section 4)", "issue": "Lease says 'light assembly and warehousing.' Welding is not light assembly. Landlord could terminate for unauthorized use. Fix: specify 'robotic welding, metal fabrication, and assembly' explicitly." },
+      { "severity": "red", "clause": "Power Infrastructure (Section 8.3)", "issue": "Lease is silent on transformer capacity. Current building has 1600A but transformer is shared with adjacent tenant. If they expand, your power gets squeezed. Fix: add dedicated transformer clause or minimum guaranteed amperage." },
+      { "severity": "yellow", "clause": "TI Allowance (Section 6)", "issue": "$15/SF TI allowance. Your buildout estimate is $22/SF (compressed air drops, welding ventilation, 3-phase sub-panels). Gap is $127K out of pocket. Negotiate to $20/SF or request landlord-funded electrical upgrade separately." }
+    ]
+  }
+}

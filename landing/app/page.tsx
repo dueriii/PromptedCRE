@@ -2,6 +2,7 @@ import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { PositioningStrip } from "@/components/positioning-strip"
 import { HowItWorks } from "@/components/how-it-works"
+import { SampleOutputShowcase } from "@/components/sample-output"
 import { WhySection } from "@/components/why-section"
 import { HumanSupport } from "@/components/human-support"
 import { FAQSection } from "@/components/faq-section"
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <PositioningStrip />
       <HowItWorks />
+      <SampleOutputShowcase />
       <WhySection />
       <HumanSupport />
       <FAQSection />

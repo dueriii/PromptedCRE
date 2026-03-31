@@ -1,29 +1,23 @@
-import { ClipboardList, Search, BarChart3, UserCheck } from "lucide-react"
+import { ClipboardList, BarChart3, FileText } from "lucide-react"
 
 const steps = [
   {
     number: "01",
     icon: ClipboardList,
-    title: "Tell it what you need",
-    description: "Square footage, clear height, power, docks, rail — the agent captures everything that matters for your operation.",
+    title: "Describe your needs",
+    description: "Tell the agent about your company and space requirements. It captures everything: square footage, clear height, power, docks, zoning, timeline, budget.",
   },
   {
     number: "02",
-    icon: Search,
-    title: "Search the market",
-    description: "Get precise filters you can drop straight into CoStar, LoopNet, or hand to a broker. No more guessing.",
+    icon: BarChart3,
+    title: "Agent evaluates properties",
+    description: "Drop listings in or paste them from CoStar and LoopNet. The agent scores each building, runs side-by-side comparisons, and shows you the total cost over your lease term.",
   },
   {
     number: "03",
-    icon: BarChart3,
-    title: "Compare and decide",
-    description: "Side-by-side building analysis. Lease vs. buy. Building A vs. Building B. Clear signal, no noise.",
-  },
-  {
-    number: "04",
-    icon: UserCheck,
-    title: "Bring in the humans",
-    description: "When it's time to negotiate, tour, or close — connect with industrial brokers who actually know this world.",
+    icon: FileText,
+    title: "Negotiate with confidence",
+    description: "Draft LOIs with market-calibrated terms. Review lease contracts for industrial-specific red flags. Know what to ask the landlord before you walk in the room.",
   },
 ]
 
@@ -36,11 +30,11 @@ export function HowItWorks() {
             From requirement to signed deal
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Four steps. No fluff. Real estate decisions at the speed your company moves.
+            Three steps. No fluff. Real estate decisions at the speed your company moves.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="relative group">
               {/* Connection line */}

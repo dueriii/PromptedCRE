@@ -2,10 +2,10 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Copy, Check, ClipboardCheck, Filter, Map, Scale, Calendar, HelpCircle, Target, FileText } from "lucide-react"
+import { ArrowRight, Copy, Check, ClipboardCheck, Filter, Map, Scale, Calendar, HelpCircle, Target, FileText, Shield, Clock } from "lucide-react"
 
 const gitCloneCommand = `git clone https://github.com/dueriii/PromptedCRE.git
-cd PromptedCRE/repo`
+cd PromptedCRE/agent`
 
 const agents = [
   { name: "intake", description: "Define space & operational requirements", icon: ClipboardCheck },
@@ -14,6 +14,8 @@ const agents = [
   { name: "comparison", description: "Side-by-side lease vs. purchase", icon: Scale },
   { name: "tour-prep", description: "Pre-visit checklist and walk agenda", icon: Calendar },
   { name: "landlord-questions", description: "45+ strategic questions", icon: HelpCircle },
+  { name: "due-diligence", description: "Inspections, Phase I ESA, title search", icon: Shield },
+  { name: "deal-timeline", description: "Milestone schedule and deadlines", icon: Clock },
   { name: "loi-review", description: "LOI drafting and negotiation", icon: Target },
   { name: "contract-review", description: "Lease and purchase analysis", icon: FileText },
 ]
@@ -50,11 +52,29 @@ export function HeroSection() {
               Real Estate Intelligence for American Builders
             </h1>
 
-            <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-              PromptedCRE is a free AI agent that gives manufacturers, operators, and industrial founders the real estate firepower they deserve — find space, compare buildings, and close deals without gatekeepers, fees, or nonsense.
+            <p className="text-xl text-muted-foreground max-w-xl leading-relaxed">
+              From space requirements to signed lease. 10 AI-guided workflows.
             </p>
 
+            <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+              Free AI agent that walks industrial companies through the entire real estate process. Define your requirements, evaluate buildings, compare options, draft LOIs, and review contracts. Built by an industrial broker, not a developer guessing about CRE.
+            </p>
 
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" className="h-12 px-8" asChild>
+                <a
+                  href="https://github.com/dueriii/PromptedCRE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Get Started on GitHub
+                  <ArrowRight className="size-4 ml-2" />
+                </a>
+              </Button>
+              <Button variant="outline" size="lg" className="h-12 px-8" onClick={() => scrollToSection("human-support")}>
+                Book a Free Call
+              </Button>
+            </div>
 
             <p className="text-sm text-muted-foreground">
               Open source. No email. No strings. Just ship.
@@ -101,7 +121,7 @@ export function HeroSection() {
                   <span className="text-accent">https://github.com/dueriii/PromptedCRE.git</span>
                   {"\n"}
                   <span className="text-muted-foreground">cd </span>
-                  <span>PromptedCRE/repo</span>
+                  <span>PromptedCRE/agent</span>
                 </pre>
               </div>
 
