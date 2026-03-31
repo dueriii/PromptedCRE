@@ -2,7 +2,7 @@
 
 **Real Estate Intelligence for American Builders**
 
-Free AI agent that guides industrial companies through the entire real estate process — from defining requirements to signing a lease. 12 structured skills covering intake, search, evaluation, comparison, negotiation, due diligence, and contract review. No broker jargon. No wasted tours.
+Free AI agent that guides industrial companies through the entire real estate process. From defining requirements to signing a lease. Built by an industrial broker, not a developer guessing about CRE.
 
 [promptedcre.com](https://promptedcre.com)
 
@@ -16,9 +16,19 @@ cd PromptedCRE/agent
 cp memory.template.md memory.md
 ```
 
-Open the `agent/` folder in Claude Code, Cursor, or your AI tool of choice. Then start with:
+Open the `agent/` folder in Claude Code (recommended), Cursor, or your AI tool of choice.
+
+**Then say something like:**
 
 > "I need 15,000-25,000 SF of industrial space in the Houston metro. Manufacturing use, 3-phase power required, 24-foot clear height minimum."
+
+Or:
+
+> "Here's a listing I found on LoopNet. Can you evaluate it against my requirements?"
+
+Or:
+
+> "Compare these three properties and tell me which one to tour first."
 
 The agent walks you through the rest.
 
@@ -28,60 +38,62 @@ The agent walks you through the rest.
 
 ```
 PromptedCRE/
-├── agent/              ← The product (start here)
-│   ├── CLAUDE.md           System prompt + workflow engine
-│   ├── AGENTS.md           OpenClaw / generic agent config
-│   ├── GEMINI.md           Gemini agent config
-│   ├── memory.template.md  Copy to memory.md to enable persistence
-│   ├── skills/             12 structured skills
-│   │   ├── intake/             Define your space requirement
-│   │   ├── search-filters/     Build CoStar/LoopNet/Crexi filters
-│   │   ├── property-survey/    Evaluate buildings against criteria
-│   │   ├── comparison/         Side-by-side + financial analysis
-│   │   ├── tour-prep/          What to look for on-site
-│   │   ├── landlord-questions/ Surface hidden issues, build leverage
-│   │   ├── due-diligence/      Inspections, Phase I ESA, title search
-│   │   ├── deal-timeline/      Milestone schedule for your deal
-│   │   ├── loi-review/         Draft and review Letters of Intent
-│   │   ├── contract-review/    Lease/purchase contract red flags
-│   │   ├── memory/             Persistent context across sessions
-│   │   └── using-promptedcre/  Orientation and help
-│   ├── templates/          Structured output templates
-│   └── examples/           Sample outputs from real-world scenarios
-├── landing/            ← Marketing site (promptedcre.com)
-└── repo/               ← Legacy workflow prompts (deprecated)
+├── agent/                      <- The product (start here)
+│   ├── CLAUDE.md                   System prompt + workflow engine
+│   ├── AGENTS.md                   OpenClaw / generic agent config
+│   ├── GEMINI.md                   Gemini agent config
+│   ├── memory.template.md          Copy to memory.md to enable persistence
+│   ├── playbook/
+│   │   └── skills/                 10 structured workflows
+│   │       ├── intake/                 Define space requirements
+│   │       ├── search-filters/         Build search parameters
+│   │       ├── property-survey/        Evaluate buildings
+│   │       ├── comparison/             Side-by-side analysis
+│   │       ├── tour-prep/              Pre-visit checklist
+│   │       ├── landlord-questions/     Surface hidden issues
+│   │       ├── due-diligence/          Inspections + DD planning
+│   │       ├── deal-timeline/          Milestone schedule
+│   │       ├── loi-review/             Draft + review LOIs
+│   │       ├── contract-review/        Lease/purchase red flags
+│   │       ├── memory/                 Persistent context
+│   │       └── using-promptedcre/      Orientation + help
+│   ├── reference/
+│   │   ├── templates/              Structured output templates
+│   │   ├── examples/               Sample outputs from real scenarios
+│   │   └── market-data/            Glossary, incentives, broker guide
+│   └── working-deals/              Your active deals (gitignored)
+├── landing/                    <- Marketing site (promptedcre.com)
+└── repo/                       <- Legacy workflows (deprecated, use agent/)
 ```
 
-## The 12 Skills
+## The 10 Workflows
 
-| # | Skill | What It Does |
-|---|-------|-------------|
-| 1 | **Intake** | Captures your space requirements — operations, building specs, power, location, budget, timeline |
-| 2 | **Search Filters** | Translates requirements into platform-ready search parameters (tiered: start broad, narrow down) |
-| 3 | **Property Survey** | Scores each building against your criteria across Location, Pricing, and Functionality |
-| 4 | **Comparison** | Side-by-side matrix with weighted scoring, 10-year financial analysis, and clear recommendation |
-| 5 | **Tour Prep** | Pre-tour checklist customized to your operation — what to observe, measure, and photograph |
-| 6 | **Landlord Questions** | 45+ targeted questions organized by category to surface problems and build leverage |
-| 7 | **Due Diligence** | Phase I ESA, PCA, roof inspection, ALTA survey, zoning — full checklist with costs and timelines |
-| 8 | **Deal Timeline** | Milestone schedule with deadline warnings and calendar reminders |
-| 9 | **LOI Review** | Draft, review, or negotiate Letters of Intent with market-calibrated terms |
-| 10 | **Contract Review** | Industrial-specific lease and purchase contract analysis with red flag detection |
-| 11 | **Memory** | Persistent deal context across sessions — the agent gets smarter over time |
-| 12 | **Using PromptedCRE** | Orientation and help for new users |
+| # | Workflow | What It Does | Try Saying |
+|---|---------|-------------|------------|
+| 1 | **Intake** | Captures your space requirements through conversation | "I need industrial space for my robotics company in Texas" |
+| 2 | **Search Filters** | Translates requirements into CoStar/LoopNet/Crexi search parameters | "Build me search filters based on my requirements" |
+| 3 | **Property Survey** | Scores each building on Location, Pricing, and Functionality | "Here's a listing I found, can you evaluate it?" |
+| 4 | **Comparison** | Side-by-side matrix with weighted scoring and 10-year cost analysis | "Compare Property A and Property B side by side" |
+| 5 | **Tour Prep** | Pre-tour checklist customized to your operation | "I'm touring this warehouse tomorrow, what should I look for?" |
+| 6 | **Landlord Questions** | 45+ targeted questions to surface problems and build leverage | "What should I ask the landlord at our meeting?" |
+| 7 | **Due Diligence** | Phase I ESA, inspections, title search, zoning. Full checklist with timelines | "What inspections do I need before signing?" |
+| 8 | **Deal Timeline** | Milestone schedule with deadline warnings | "What's next in my deal? When are the deadlines?" |
+| 9 | **LOI Review** | Draft, review, or negotiate Letters of Intent | "I want to make an offer on this building" |
+| 10 | **Contract Review** | Industrial-specific lease and purchase contract red flags | "Can you review this lease agreement?" |
 
 ## How It Works
 
 1. **You talk, the agent listens.** Describe your company and what you need. The agent runs intake and captures everything.
 2. **You search, the agent analyzes.** Run the filters on CoStar/LoopNet/Crexi yourself, then drop listings into your deal folder or paste them in the chat. The agent evaluates every property.
-3. **You decide, the agent arms you.** Comparison matrices, negotiation strategies, LOI drafts, and contract reviews — everything you need to make a confident decision.
+3. **You decide, the agent arms you.** Comparison matrices, negotiation strategies, LOI drafts, and contract reviews. Everything you need to make a confident decision.
 
-All deal data stays local. `memory.md` and `deals/` are gitignored — your company names, budgets, and negotiation strategies never leave your machine.
+All deal data stays local. `memory.md` and `working-deals/` are gitignored. Your company names, budgets, and negotiation strategies never leave your machine.
 
 ---
 
 ## Who It's For
 
-Companies that build things. If you're evaluating industrial space for a manufacturing facility, warehouse, R&D lab, or production floor — this is for you.
+Companies that build things. If you're evaluating industrial space for a manufacturing facility, warehouse, R&D lab, or production floor.
 
 - Defense tech and aerospace
 - Advanced manufacturing and robotics
@@ -93,18 +105,18 @@ Companies that build things. If you're evaluating industrial space for a manufac
 
 ## Platform Support
 
-| Platform | How to Use |
-|---|---|
-| **Claude Code** | `cd agent/` and start a session. Full file read/write — memory and deal folders work automatically. |
-| **Cursor** | Load `agent/` as your project. Agent rules apply via CLAUDE.md. |
-| **Claude.ai / ChatGPT** | Paste `agent/CLAUDE.md` + the relevant skill's `SKILL.md` into your conversation. Use the memory block format for persistence between sessions. |
-| **Gemini** | Use `agent/GEMINI.md` as system instructions. |
+| Platform | Experience | Notes |
+|---|---|---|
+| **Claude Code** (recommended) | Full workflow | File read/write, deal folders, automatic memory persistence |
+| **Cursor** | Full workflow | Agent rules apply via CLAUDE.md |
+| **Claude.ai / ChatGPT** | Single sessions | Paste CLAUDE.md + relevant SKILL.md. Use memory blocks for persistence between sessions |
+| **Gemini** | Single sessions | Use GEMINI.md as system instructions |
 
 ---
 
 ## Need a Human?
 
-This agent gives you knowledge parity with professionals. But at the LOI and lease negotiation stage, having an experienced industrial broker on your side is worth the commission — which the landlord typically pays anyway.
+This agent gives you knowledge parity with professionals. But at the LOI and lease negotiation stage, having an experienced industrial broker on your side is worth the commission, which the landlord typically pays anyway.
 
 [Book a free call with an industrial broker](https://calendly.com/admin-promptedcre)
 
