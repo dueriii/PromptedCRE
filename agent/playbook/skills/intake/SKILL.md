@@ -151,9 +151,13 @@ Present a **Requirement Summary** using the template in `reference/templates/req
 Ask the user to confirm or correct the summary.
 
 Once confirmed:
-1. **Update memory** — save the full requirement summary to memory.md (or output a memory block on platforms without file access)
+1. **Update memory** — save the full requirement summary to memory.md (or output a memory block on platforms without file access). If memory.md is empty or contains only template fields, also write the company profile (company name, industry, team size, decision timeline) as the first deal entry. If memory.md already has a different deal, add a new deal section.
 2. **Milestone check-in:** "Requirements locked in. Anything feel off, or are we good to search?"
 3. Transition to the `search-filters` skill.
+
+## Next Step
+
+After intake is confirmed → transition to `search-filters` to generate CoStar/LoopNet/Crexi search parameters from the locked requirements.
 
 ## Red Flags to Surface
 

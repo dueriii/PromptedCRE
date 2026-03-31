@@ -122,3 +122,7 @@ If no memory block is provided and no memory.md is available, start fresh and no
 ## After Writing
 
 Confirm with a brief note in your response: "I've updated our notes." Don't make a big deal of it. Just do it and move on.
+
+## Next Step
+
+Memory is infrastructure, not a workflow. After updating memory, continue with whatever skill the user is working on.
