@@ -1,6 +1,9 @@
 # PromptedCRE — Industrial Real Estate Workflow Repo
 > Version 2.1 | Updated: 2026-03-15 | Built by William Alcorn, Finial Group
 
+> Legacy workflow pack. The actively maintained product now lives in `agent/`.
+> Use this folder for historical reference only unless you intentionally want the older copy/paste workflow format.
+
 **The most complete industrial real estate decision system available.**
 Built by an active broker. Grounded in live market data.
 
@@ -10,6 +13,8 @@ Built by an active broker. Grounded in live market data.
 
 A structured set of AI workflows for industrial companies making real estate decisions.
 Copy these files into Claude, ChatGPT, Cursor, or any AI IDE. Run them in order.
+
+If you're new to the repository, start in `agent/` instead. That is where current development and maintenance happen.
 
 Built from real deal experience — not theory. Covers Houston, San Antonio, and the I-35 corridor. Applicable anywhere.
 

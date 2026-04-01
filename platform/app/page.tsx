@@ -1,7 +1,4 @@
-import { Building2, BarChart3, Search, ArrowRight } from "lucide-react";
-import Link from "next/link";
-import { buttonVariants } from "@/lib/button-variants";
-import { cn } from "@/lib/utils";
+import { Building2, BarChart3, Search } from "lucide-react";
 
 export default function Home() {
   return (
@@ -14,47 +11,35 @@ export default function Home() {
           Find space, analyze properties, and close deals — free AI-powered CRE
           tools built for reindustrialization companies.
         </p>
+        <p className="max-w-xl text-sm text-muted-foreground">
+          This web app is still in prototype mode. The screens below are planned
+          next, but they are not live routes yet.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-2xl">
-        <Link
-          href="/search"
-          className={cn(
-            buttonVariants({ variant: "outline" }),
-            "h-auto flex-col gap-2 p-4"
-          )}
-        >
+        <div className="flex h-auto flex-col gap-2 rounded-lg border p-4 text-left">
           <Search className="h-6 w-6" />
           <span className="font-medium">Search Properties</span>
-          <span className="text-xs text-muted-foreground">Find industrial space</span>
-        </Link>
-        <Link
-          href="/analysis"
-          className={cn(
-            buttonVariants({ variant: "outline" }),
-            "h-auto flex-col gap-2 p-4"
-          )}
-        >
+          <span className="text-xs text-muted-foreground">
+            Planned workspace for finding industrial space
+          </span>
+        </div>
+        <div className="flex h-auto flex-col gap-2 rounded-lg border p-4 text-left">
           <BarChart3 className="h-6 w-6" />
           <span className="font-medium">Analyze Deals</span>
-          <span className="text-xs text-muted-foreground">Cap rates, NOI, cash flow</span>
-        </Link>
-        <Link
-          href="/properties"
-          className={cn(
-            buttonVariants({ variant: "outline" }),
-            "h-auto flex-col gap-2 p-4"
-          )}
-        >
+          <span className="text-xs text-muted-foreground">
+            Planned underwriting and scenario analysis
+          </span>
+        </div>
+        <div className="flex h-auto flex-col gap-2 rounded-lg border p-4 text-left">
           <Building2 className="h-6 w-6" />
           <span className="font-medium">My Properties</span>
-          <span className="text-xs text-muted-foreground">Saved and tracked</span>
-        </Link>
+          <span className="text-xs text-muted-foreground">
+            Planned saved-property and deal-tracking view
+          </span>
+        </div>
       </div>
-
-      <Link href="/search" className={cn(buttonVariants({ size: "lg" }), "gap-2")}>
-        Get started <ArrowRight className="h-4 w-4" />
-      </Link>
     </div>
   );
 }

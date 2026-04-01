@@ -1,5 +1,5 @@
 # MARKET-CONTEXT.md
-> Auto-refreshed weekly. Last updated: 2026-03-15. Do not edit manually.
+> Manual market snapshot. Last updated: 2026-03-15. Update when new market data is available.
 
 ## How to Use This File
 Every workflow in this repo references this file for current market conditions.
@@ -74,4 +74,4 @@ Before running any workflow, paste this file's contents into your AI context win
 ---
 
 *Sources: Avison Young Houston Q4 2025, WareCRE 2026 Report, Crexi SA Market 2026, Matthews Q4 2025, houston.org Q4 2025*
-*Refresh schedule: Weekly (Mondays). Maintained by Henry.*
+*Refresh schedule: Manual. Maintained by Henry.*
